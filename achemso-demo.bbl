@@ -1,0 +1,268 @@
+\providecommand{\latin}[1]{#1}
+\makeatletter
+\providecommand{\doi}
+  {\begingroup\let\do\@makeother\dospecials
+  \catcode`\{=1 \catcode`\}=2 \doi@aux}
+\providecommand{\doi@aux}[1]{\endgroup\texttt{#1}}
+\makeatother
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{28}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
+
+\bibitem[Kuzmin \latin{et~al.}()Kuzmin, Da~Costa, Cottrell, and
+  Fedor]{kuzmin_role_2005}
+Kuzmin,~Y.~I.; Da~Costa,~C.~P.; Cottrell,~J.~W.; Fedor,~M.~J. Role of an Active
+  Site Adenine in Hairpin Ribozyme Catalysis. \emph{349}, 989--1010\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rupert and Ferr{\'e}-D'Amar{\'e}()Rupert, and
+  Ferr{\'e}-D'Amar{\'e}]{rupert_crystal_2001}
+Rupert,~P.~B.; Ferr{\'e}-D'Amar{\'e},~A.~R. Crystal structure of a hairpin
+  ribozyme--inhibitor complex with implications for catalysis. \emph{410},
+  780--786\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Salter \latin{et~al.}()Salter, Krucinska, Alam, Grum-Tokars, and
+  Wedekind]{salter_water_2006}
+Salter,~J.; Krucinska,~J.; Alam,~S.; Grum-Tokars,~V.; Wedekind,~J.~E. Water in
+  the Active Site of an All-{RNA} Hairpin Ribozyme and Effects of Gua8 Base
+  Variants on the Geometry of Phosphoryl Transfer $^{\textrm{,}}$. \emph{45},
+  686--700\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kath-Schorr \latin{et~al.}()Kath-Schorr, Wilson, Li, Lu, Piccirilli,
+  and Lilley]{kath-schorr_general_2012}
+Kath-Schorr,~S.; Wilson,~T.~J.; Li,~N.-S.; Lu,~J.; Piccirilli,~J.~A.;
+  Lilley,~D. M.~J. General Acid--Base Catalysis Mediated by Nucleobases in the
+  Hairpin Ribozyme. \emph{134}, 16717--16724\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ml{\'y}nsk{\'y} \latin{et~al.}()Ml{\'y}nsk{\'y}, Ban{\'a}{\v s},
+  Hollas, R{\'e}blov{\'a}, Walter, {\v S}poner, and
+  Otyepka]{mlynsky_extensive_2010}
+Ml{\'y}nsk{\'y},~V.; Ban{\'a}{\v s},~P.; Hollas,~D.; R{\'e}blov{\'a},~K.;
+  Walter,~N.~G.; {\v S}poner,~J.; Otyepka,~M. Extensive Molecular Dynamics
+  Simulations Showing That Canonical G8 and Protonated A38H $^{\textrm{+}}$
+  Forms Are Most Consistent with Crystal Structures of Hairpin Ribozyme.
+  \emph{114}, 6642--6652\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ml{\'y}nsk{\'y} \latin{et~al.}()Ml{\'y}nsk{\'y}, K{\"u}hrov{\'a},
+  Zgarbov{\'a}, Jure{\v c}ka, Walter, Otyepka, {\v S}poner, and Ban{\'a}{\v
+  s}]{mlynsky_reactive_2015}
+Ml{\'y}nsk{\'y},~V.; K{\"u}hrov{\'a},~P.; Zgarbov{\'a},~M.; Jure{\v c}ka,~P.;
+  Walter,~N.~G.; Otyepka,~M.; {\v S}poner,~J.; Ban{\'a}{\v s},~P. Reactive
+  Conformation of the Active Site in the Hairpin Ribozyme Achieved by Molecular
+  Dynamics Simulations with $\epsilon$/$\zeta$ Force Field Reparametrizations.
+  \emph{119}, 4220--4229\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kumar and Marx()Kumar, and Marx]{kumar_mechanistic_2018}
+Kumar,~N.; Marx,~D. Mechanistic role of nucleobases in self-cleavage catalysis
+  of hairpin ribozyme at ambient \textit{versus} high-pressure conditions.
+  \emph{20}, 20886--20898, {TR}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ml{\'y}nsk{\'y} \latin{et~al.}()Ml{\'y}nsk{\'y}, Ban{\'a}{\v s},
+  Walter, {\v S}poner, and Otyepka]{mlynsky_qmmm_2011}
+Ml{\'y}nsk{\'y},~V.; Ban{\'a}{\v s},~P.; Walter,~N.~G.; {\v S}poner,~J.;
+  Otyepka,~M. {QM}/{MM} Studies of Hairpin Ribozyme Self-Cleavage Suggest the
+  Feasibility of Multiple Competing Reaction Mechanisms. \emph{115},
+  13911--13924\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ml{\'y}nsk{\'y} \latin{et~al.}()Ml{\'y}nsk{\'y}, Ban{\'a}{\v s}, {\v
+  S}poner, van~der Kamp, Mulholland, and Otyepka]{mlynsky_comparison_2014}
+Ml{\'y}nsk{\'y},~V.; Ban{\'a}{\v s},~P.; {\v S}poner,~J.; van~der Kamp,~M.~W.;
+  Mulholland,~A.~J.; Otyepka,~M. Comparison of ab Initio, {DFT}, and
+  Semiempirical {QM}/{MM} Approaches for Description of Catalytic Mechanism of
+  Hairpin Ribozyme. \emph{10}, 1608--1622\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nam \latin{et~al.}()Nam, Gao, and York]{nam_electrostatic_2008}
+Nam,~K.; Gao,~J.; York,~D.~M. Electrostatic interactions in the hairpin
+  ribozyme account for the majority of the rate acceleration without chemical
+  participation by nucleobases. \emph{14}, 1501--1507\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kumar and Marx()Kumar, and Marx]{kumar_deciphering_2020}
+Kumar,~N.; Marx,~D. Deciphering the Self-Cleavage Reaction Mechanism of Hairpin
+  Ribozyme. \emph{124}, 4906--4918\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Abraham \latin{et~al.}()Abraham, Murtola, Schulz, P{\'a}ll, Smith,
+  Hess, and Lindahl]{abraham_gromacs_2015}
+Abraham,~M.~J.; Murtola,~T.; Schulz,~R.; P{\'a}ll,~S.; Smith,~J.~C.; Hess,~B.;
+  Lindahl,~E. {GROMACS}: High performance molecular simulations through
+  multi-level parallelism from laptops to supercomputers. \emph{1-2},
+  19--25\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Tribello \latin{et~al.}()Tribello, Bonomi, Branduardi, Camilloni, and
+  Bussi]{tribello_plumed_2014}
+Tribello,~G.~A.; Bonomi,~M.; Branduardi,~D.; Camilloni,~C.; Bussi,~G. {PLUMED}
+  2: New feathers for an old bird. \emph{185}, 604--613\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{The PLUMED consortium}()]{the_plumed_consortium_promoting_2019}
+{The PLUMED consortium} Promoting transparency and reproducibility in enhanced
+  molecular simulations. \emph{16}, 670--673\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Torelli \latin{et~al.}()Torelli, Krucinska, and
+  Wedekind]{torelli_comparison_2007}
+Torelli,~A.~T.; Krucinska,~J.; Wedekind,~J.~E. A comparison of vanadate to a
+  2'--5' linkage at the active site of a small ribozyme suggests a role for
+  water in transition-state stabilization. \emph{13}, 1052--1070\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Veenis \latin{et~al.}()Veenis, Li, Soudackov, Hammes-Schiffer, and
+  Bevilacqua]{veenis_investigation_2021}
+Veenis,~A.~J.; Li,~P.; Soudackov,~A.~V.; Hammes-Schiffer,~S.; Bevilacqua,~P.~C.
+  Investigation of the p \textit{K} $_{\textrm{a}}$ of the Nucleophilic O2' of
+  the Hairpin Ribozyme. \emph{125}, 11869--11883\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wilson and Lilley()Wilson, and Lilley]{wilson_hairpin_2011}
+Wilson,~T.~J.; Lilley,~D.~M. Do the hairpin and {VS} ribozymes share a common
+  catalytic mechanism based on general acid--base catalysis? A critical
+  assessment of available experimental data. \emph{17}, 213--221\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lebruska \latin{et~al.}()Lebruska, Kuzmine, and
+  Fedor]{lebruska_rescue_2002}
+Lebruska,~L.~L.; Kuzmine,~I.~I.; Fedor,~M.~J. Rescue of an Abasic Hairpin
+  Ribozyme by Cationic Nucleobases. \emph{9}, 465--473\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bevilacqua()]{bevilacqua_mechanistic_2003}
+Bevilacqua,~P.~C. Mechanistic Considerations for General Acid-Base Catalysis by
+  {RNA}: Revisiting the Mechanism of the Hairpin Ribozyme. \emph{42},
+  2259--2265\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kuzmin \latin{et~al.}()Kuzmin, Da~Costa, and Fedor]{kuzmin_role_2004}
+Kuzmin,~Y.~I.; Da~Costa,~C.~P.; Fedor,~M.~J. Role of an Active Site Guanine in
+  Hairpin Ribozyme Catalysis Probed by Exogenous Nucleobase Rescue. \emph{340},
+  233--251\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nahas \latin{et~al.}()Nahas, Wilson, Hohng, Jarvie, Lilley, and
+  Ha]{nahas_observation_2004}
+Nahas,~M.~K.; Wilson,~T.~J.; Hohng,~S.; Jarvie,~K.; Lilley,~D. M.~J.; Ha,~T.
+  Observation of internal cleavage and ligation reactions of a ribozyme.
+  \emph{11}, 1107--1113\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wilson \latin{et~al.}()Wilson, Ouellet, Zhao, Harusawa, Araki,
+  Kurihara, and Lilley]{wilson_nucleobase_2006}
+Wilson,~T.~J.; Ouellet,~J.; Zhao,~Z.-Y.; Harusawa,~S.; Araki,~L.; Kurihara,~T.;
+  Lilley,~D.~M. Nucleobase catalysis in the hairpin ribozyme. \emph{12},
+  980--987\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Benayad \latin{et~al.}()Benayad, Bova Saint-Andr{\'e}, and
+  Stirnemann]{benayad_molecular_2022}
+Benayad,~Z.; Bova Saint-Andr{\'e},~M.; Stirnemann,~G. Molecular Mechanisms of
+  Phosphoester Bond Formation in Water Using Tight-Binding Ab Initio Molecular
+  Dynamics. \emph{126}, 8251--8265\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Benayad \latin{et~al.}()Benayad, David, and
+  Stirnemann]{benayad_molecular_2023}
+Benayad,~Z.; David,~R.; Stirnemann,~G. Molecular mechanisms of phosphoester
+  bond formation in abiotic conditions with reactive neural network potentials.
+  10.26434/chemrxiv--2023--8c1mt\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Flori{\'a}n and Warshel()Flori{\'a}n, and
+  Warshel]{florian_phosphate_1998}
+Flori{\'a}n,~J.; Warshel,~A. Phosphate Ester Hydrolysis in Aqueous Solution:
+  Associative versus Dissociative Mechanisms. \emph{102}, 719--734\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Duarte \latin{et~al.}()Duarte, {\AA}qvist, Williams, and
+  Kamerlin]{duarte_resolving_2015}
+Duarte,~F.; {\AA}qvist,~J.; Williams,~N.~H.; Kamerlin,~S. C.~L. Resolving
+  Apparent Conflicts between Theoretical and Experimental Models of Phosphate
+  Monoester Hydrolysis. \emph{137}, 1081--1093\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Warshel \latin{et~al.}()Warshel, Sharma, Kato, Xiang, Liu, and
+  Olsson]{warshel_electrostatic_2006}
+Warshel,~A.; Sharma,~P.~K.; Kato,~M.; Xiang,~Y.; Liu,~H.; Olsson,~M. H.~M.
+  Electrostatic Basis for Enzyme Catalysis. \emph{106}, 3210--3235\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

@@ -13,6 +13,8 @@
 %% servers.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+\usepackage{color}
+\usepackage{xcolor}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% If issues arise when submitting your manuscript, you may want to
@@ -27,6 +29,7 @@
 %% when typesetting).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand*\mycommand[1]{\texttt{\emph{#1}}}
+\def\selrev#1{\textcolor{blue}{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Meta-data block
@@ -56,6 +59,8 @@
 \email{guillaume.stirnemann@ens.psl.eu}
 \affiliation[ENS]
 {CPCV, Département de Chimie, École Normale Supérieure, PSL University, Sorbonne University, CNRS, 75005 Paris}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% The document title should be given as usual. Some journals require
@@ -110,60 +115,203 @@ separate page at the end of the document.
 %% if an abstract is not used by the target journal.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-  [...]
+[...]
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Start the main part of the manuscript here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
-The discovery of catalytic RNAs, or ribozymes, have drastically changed our view of biological catalysis, proving that cell activity can be undertaken by more than proteins. Yet the full comprehension of the chemistry at play remains uncertain, with notably remaining debates on how do mechanistically does the catalyst perform the reaction. Among the well-known ribozymes outstands the hairpin ribozyme, which performs the cleavage of a phosphodiester bond upon its own backbone. 
-It is not the only ribozyme to be self-reactive, but it was found to be one of the few to be able to do so without requiring any ion. 
+The discovery of catalytic RNAs, or ribozymes, have drastically changed our view of biological catalysis, 
+proving that cell activity can be undertaken by more than proteins. 
+Yet the full comprehension of the chemistry at play in these systems remains uncertain, 
+with notably remaining debates on how mechanistically does the catalyst perform the reaction. 
+\selrev{Ettoffer un peu ici. Peut être faire un petit inventaire de ce que l'on connait des autres ryb ?}
+
+Among the most-studied ribozymes outstands the hairpin ribozyme (HpR), which performs the cleavage of a phosphodiester bond upon its own backbone,
+with a 3'-5' polymeric linkage of its nucleic backbone replaced by a 2'-3' cyclic terminating linkage.  
+The HpR is not the only ribozyme to be self-reactive, but it was found to be one of the few to be able to do so without requiring any ion. 
+% Enjeu globau : mais commentles ARNs s'y prennent ils ? Prendre un example d'itérêt : sans ion, reaction de self-cleavage du HpR.
+% Pourquoi est il difficile de trancher le débat ? Object auto reactif difficile à étudier expérimentalement
+%% Du coup on peut faire de la simulation a partir des structures dont l'ont dispose mais pas facile de tracnher le débat car objet très flexibles
 %Additionally, and despite being characterized as a self-cleaving specie, its chemical equilibrium is rather in favor of ligation.
-Here, all chemical components involved in the reaction are part of the RNA itself.  f the self-splicing involves a substitution reaction at a phosphate group, 
-where a 3'-5' polymeric linkage is replaced with a 2'-3' cyclic terminating linkage. involve only componetns of the RNA 
-
-
-% Smal self-cleaving ribozymes ... 
-% HAIRPIN RIBOZYME PRESENTATION
-%% presentation of the chemical activity
+If we do have proof that all chemical components involved in the self-splicing reaction are part of the RNA itself, we do not 
+know exactly which RNA atoms take part, and neither do we know how exactly do they proceed the self-cleavage. 
 
 % MECHANISTIC PRESENTATION 
-%% Argument pro and cons for each ? 
+%% Argument pro and cons for each ?
+%% Opposition between insights from simulation and experiment
+In this transphosphoesterification process, 
+the central step is an addition-elimination step, which involved the formation of a pentavalent phosphorus transition state.
+For this to occur, two key questions arise: how is the nucleophilic group activated prior to the addition step?
+And how is the departing group activated prior to the elimination step?
 
-% 
+Mutagenesis experiments \cite{kuzmin_role_2005}, reinforced by structural resolution studies \cite{rupert_crystal_2001,salter_water_2006},
+have demonstrated that two surrounding nucleobases, G8 and A38, are (i) mandatory for the chemical activity and (ii) in the direct neighbourhood of the A-1 --- G+1 junction.
+From there, a first mechanistic scenarios was proposed: the dianionic scenario proposes that both G8 and A38 are directly involved, 
+acting respectively as the general base that activates the nucleophile O2' by capturing its proton, 
+and as the general acid that reprotonates the leaving group O5' after the elimination step (see Figure \ref{fig:all_mecas} A).
+Despite supporting pH-dependency experiments, this cleavage scenario suffers from one major inconsistency, 
+which is the necessary prior deprotonation but \textit{in-vivo} impractical of the N1 atom of G8 nucleobase.
 
-% 
+To address this insufficiency, a second scenario has been considered: the in-line monoanionic scenario (see Figure \ref{fig:all_mecas} B). 
+Here, A38 and G8 nucleobases only contribute to the electrostatic stabilization of the transition state, 
+being involved in several H-bonds with atoms of the scissible junction. 
+En more, these non-covalent interactions force the catalytic site to arrange favorably for the initiation of the reaction.
+While being maintained in position, 
+the deprotonation of the O2' atom of A-1 is performed by one of the non-bridging oxygens the phosphate group itself, 
+leading to a monoprotic phosphate intermediate. 
+However, this scenario also suffers from its apparent incompatibility with the experimental pH-dependency of the reaction, 
+as argued by Kath-Schorr et al. \cite{kath-schorr_general_2012}.
+
+All this debate remains unsettled so far because of the inherent self-reactiveness of the HpR. 
+Indeed, because it is self-reactive, the hairpin ribozyme can not be structurally resolved in directly as such.
+Instead, mimics of the HpR in wich the chemical activity is inhibited, etiher by removing the O2' oxygen nuclophilr, by methylating it
+or by replacing other chemical groups with non-reactive ones, are used to study the catalytic site.
+Thus, no one can directly observe the catalytic site in its reactive form.
+With arguments based on crystal structures of \textit{mimics} of the catalytic states,
+and non-discriminative pH profiles, it has been hard to draw definitive conclusions from experiments only.
+
+In parallel to the experimental efforts, the HpR has been studied using \textit{in silico} tools.
+Complementary to X-ray crystal studies, molecular dynamics (MD) expands the knowledge gained through structural resolution
+by providing the dynamic behavior of the resolved object. 
+Here, the challenge of studying self-reactive objects is no longer a problem,
+as one can simulate any reactive species without worrying about self-degradation.
+These studies aimed at studying two aspects : first, the conformational landscape of the HpR, from extanded simulation of the full HpR with classical force fields \cite{mlynsky_extensive_2010, mlynsky_reactive_2015,kumar_mechanistic_2018},
+and second, the chemical activity itself, with mixed quantic and classic mechanics (QM/MM) simulations \cite{mlynsky_qmmm_2011, mlynsky_comparison_2014, mlynsky_qmmm_2011, nam_electrostatic_2008, nam_electrostatic_2009,kumar_deciphering_2020}.
+Far from discriminating a mechanistic route over the other, these studies rather support the idea of potentially coexistent mechanistic strategies.
+
+Anyway, they suffer from the inherent limitations of MD: on one hand the lack of accuracy in of the classical force fields,
+and on the other hand the limited conformational sampling of QM/MM simulations.
+
+
+
+
+
+%% Pas de simulation de l'état clivé encore 
+All we have is the knowledge that the ribozyme is self-reactive and can perform the cleavage without any cofactor. We are missing simulations of the cleaved states, which are necessary to understand the chemical activity of the ribozyme.
+fill the partial knwoledge led us to concieve ..
+
+Althought 
+The simulation will provide relevant structures of either reactive, product, or transition states,
+which are mandatory for subsequent quantum calculations.
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{figures/All_mecanisms.png}
+  \caption[Mechanistic Pathways of the Self-Cleavage]
+  {Detailed schemes of the three proposed mechanisms for the Hairpin Ribozyme self-cleavage reaction:
+  the general acid-base mechanism, the inline mono-anionic mechanism, and the A38 mediated proton shuttle scenario.
+  We chose here to represent the inline mono-anionic mechanism with the A38 mediated proton transfer in the elimination step. 
+  The direct reprotonation of O5' by the phosphate group is shown in Figure \ref{fig:monoanionic_general} in chapter \ref{chap:hpR_mechanism}.}
+  \label{fig:all_mecas}
+\end{figure}
+
+
+
+% Enumeration de notre plan.
+
+In this study, we provide insights to the mechanistic debate by investigating the conformational landscape of different "intermediates".
+We 
+
+
+
+% Résultats partiels. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
 
 \subsection{Simulation of the HpR intermediates and Analysis Softwares}
 
-\paragraph{forcefields}
+The different simulations of the hairpin ribozyme intermediates were performed using the GROMACS 2022.3 \cite{abraham_gromacs_2015} patched with PLUMED 2.7 \cite{tribello_plumed_2014, the_plumed_consortium_promoting_2019}.
+The visualization and analysis of the REST2 trajectories were performed using respectively 
+\paragraph{Simulation of Product States}
+The initial structures of all the cleaved states investigated in this study were constructed
+from the crystallographic structure of the 61-mer minimal hairpin ribozyme resolved at 2.2 \AA,
+in which the G+1 phosphate group was removed (PDB ID: 2P7D, see Table \ref{tab:hpR_crystals}) \cite{torelli_comparison_2007}.
+The missing phosphate (P, Opro-Rp, Opro-Sp atoms) was positioned according to the Vanadate Structure (PDB ID: 2P7E).
+After superposing the respective A-1 nucleotides, 
+the Cartesian coordinates of the vanadate were extracted to be used for the phosphorus atom, and the same goes for the oxygen atoms.\\
+Additionally, a conformational heterogeneity at nucleobase G8 in the cleaved product mimic crystal structure was observed, 
+with 50\% of the population with G8 in the syn conformation, 50\% in the anti conformation \cite{torelli_comparison_2007}.
+Both conformations were reported in the crystal structure. 
+We chose to keep the anti conformer, as this is the conformation of the ligated structure, 
+the most populated conformer of the vanadate transition state mimic (PDB ID: 2P7E), 
+and the one that was resolved in the pre-catalytic state (PDB ID: 2OUE) and in the product state of the 4WJ ribozyme (PDB ID: 1M5K).
 
-\subsection{Preparation of Non-Standard Residues}
-
-\subsection{Simulation of Product States}
-\paragraph{Descriptors of the Cleaved States.}
+The positions of the final catalytic site atoms (in the crystal structure) were compared to the 4WJ cleaved HpR equivalent (PDB ID: 1M5V)
+and demonstrated excellent consistency, with an RMSD of 0.93~\AA\ calculated over all heavy atoms of residues A-1, G+1, G8 and A38 (see Figure \ref{fig:cleaved_crystals}).
 
 
+\paragraph{Forcefields.}
 
+\paragraph{Preparation of Non-Standard Residues.}
+
+The intermediates of the hairpin ribozyme with the most probable protonation states of the (isolated)
+chemical groups at \textit{in vivo} pH.
+The existing force fields do not include the parameters for these non-standard states, 
+which need to be generated specifically for this purpose.
+There are three possible situations:
+
+
+
+\subsection{Descriptors.}
+
+
+Similarly to the ligated states, 
+the analysis of the cleaved catalytic site implies the monitoring of certain key variables, 
+chosen for the relevancy regarding the mechanism.
+Here, we focus on to following observables: 
+\begin{itemize}
+    \item IAA and d$_\mathrm{G+1:O5' - A-1:PC}$ which are the key observables for the nucleophilic attack,
+    \item d$_\mathrm{A-1:O2' - G8:N1}$, d$_\mathrm{A-1:O2' - A38:N6}$,d$_\mathrm{OproSp - G8:N2}$, d$_\mathrm{OproRp - G8:N2}$, which informs on the positions of surrounding A38 and G8 regarding the 3' termini strand.
+    \item d$_\mathrm{G+1:O5' - A38:N1}$ which informs on the role of A38 in the proton transfer.
+    \item d$_\mathrm{OproSp - G+1:O5'}$, d$_\mathrm{OproRp - G+1:O5'}$ which informs on the variant of the inline scenario proton transfer.
+    \item The puckering of the G+1 ribose, symmetrically to A-1.
+\end{itemize}
+% The same combination analysis as the one done over the ligated pre-catalytic state (detailed in Chapter \ref{chap:minimal}) 
+% has been conducted here, but using these cleavaed-state key observables.
+% By analogy, we refer to this analysis as the 10-key observables combination analysis.
+
+\subsection{Convergence.}
+In the ligated state, convergence was established using both the eRMSD as global metric
+ and conformational labeling described above as local metric.
+Figure \ref{fig:Int_REST2_Convergence} A-D details the time evolution of these metrics for the ligated states.
+In the cleaved state, we did not settle any satisfying local collective variable, and had to rely on the eRMSD global metric only 
+(see Figure\ref{fig:Int_REST2_Convergence} E-F).
+
+
+
+%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 
-Althought unreleavnt scientifically speaking, we choose here to consider accordingly every species that could appear along the different mechanistic pathways, starting with the mono-anionic scenario. 
+Althought unrelevant scientifically speaking, 
+we choose here to consider accordingly every species that could appear along the different mechanistic pathways, 
+starting with the mono-anionic scenario. 
 
 \subsection{Mono-Anionic Scenario}
-The 
+
+The mono-anionic mechanism begins with a proton transfer from the O2' to one of the two oxygens of the scissile phosphate,
+leading to the formation of the "AP" intermediate (see Figure \ref{fig:monoanionic_general}).
+From there, the deprotonated O2' oxygen attacks the phosphorus atom, forming a pentavalent phosphorus transition state.
+The system subsequently proceed an elimination step, with the capture of the proton on the phosphorus oxygen and the departure of the substrate group.
+
+
+The detail of this last step is another cornerstone of the debate. 
+
+
+\paragraph{Pre-catalytic state}
+
+\paragraph{pro-Rp }
 
 
 \subsection{Dianionic Scenario}
 
-
+%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
-
-While the 
-
-While 
-
 
 \subsection{Comparison with Experimental Data}
 
@@ -186,7 +334,7 @@ Our simulations did not show any evidence of unexpected chemical players,
 and left the question of the deprotonation of G8 unanswered.
 
 Encouragingly, other experimental findings do not directly contradict our monoanionic-favoring perspective.
-Notably, the crystallographic resolution of the \acrshort{HpR} in its transition state analog \cite{torelli_comparison_2007}
+Notably, the crystallographic resolution of the HpR in its transition state analog \cite{torelli_comparison_2007}
 aligns closely with the H-bond network described by the highly stable pro-Sp intermediate,
 featuring the G8:N2···G+1:Opro-Sp and G8:N1···A-1:O2' H-bonds.
 Our results are consistent with G8 and A38H$^+$ acting as stabilizing agents.
@@ -212,10 +360,53 @@ Furthermore, our \textit{in silico} insights have not bridged these gaps;
 instead, they have highlighted scenarios that seem improbable based on current experimental observations.
 Importantly, we note that no experiments have been specifically designed to test the monoanionic scenario.
 
-Even if future QM/MM studies validate the enhanced-sampling \acrshort{MD}-derived theory of the hairpin ribozyme mechanism,
+Even if future QM/MM studies validate the enhanced-sampling MD-derived theory of the hairpin ribozyme mechanism,
 it is essential to acknowledge the experimental data that our results cannot explain, 
 and the settlement of the debate will not be achieved without a solid experimental basis.
 
+\subsection{Are Equilibrium Molecular Dynamics Simulations Relevant?}
+
+The interpretation of our observations should be done with caution.
+
+The approach itself invites scrutiny: intermediate species, by definition, are inherently unstable,
+and understanding their equilibrium behavior does not necessarily yield meaningful insights into a mechanistic pathway,
+which is inherently of high energy.
+This critique is especially pertinent to dianionic intermediates,
+whose very existence is debated, as the mechanism is often considered concerted \cite{mlynsky_comparison_2014,mlynsky_qmmm_2011,nam_electrostatic_2008}.
+In the end, distorted and unstable intermediates are both predictable and expected,
+offering little insight into the validity of this pathway.
+
+Another critique, already addressed in the previous chapter, concerns the force field.
+Without entering into the debate of the force field accuracy, we will only highlight how force field biases, 
+which may distort the depiction of the conformational landscape,
+make it impractical to rely solely on conformational sampling to resolve this debate.
+This sensitivity to parametrization is even more critical when studying intermediates,
+for which the charge redistribution was determined by association and could easily be questioned.
+
+
+\subsection{Building a QM/MM study on the Sampled Intermediates}
+
+Despite its limitations, our conformational sampling effort remains indispensable for the setup of a comparative QM/MM study.
+The mechanistic debate cannot advance without evaluating, within a unified framework,
+the energy barriers of the different mechanistic pathways to identify the most favorable chemical route.
+
+As noted earlier, this endeavor requires a robust starting point.
+Yet defining a 'good' starting conformation for ribozyme reactivity studies presents significant challenges,
+with the critical need for a reliable strategy
+to characterize the conformational ensemble before undertaking any direct investigation of the chemical steps.
+
+Experimental findings, particularly the pronounced loss of ligation activity resulting from perturbations
+to the active site architecture, emphasize the importance of precise positioning and orientation
+in catalytic rate acceleration.
+Classical MD simulations, despite their inherent limitations, remain central to accessing local arrangements
+and advancing our understanding of the mechanism.
+Currently, they provide the only practical means to explore large conformational changes 
+that result in the complete reorientation of key nucleobases.
+As previously noted, these changes remain beyond the reach of structural resolution techniques,
+both due to their static nature and the inhibitory strategies employed
+to observe reactive species like the hairpin ribozyme.
+
+%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 
 The conformational landscapes of the different mecanstic intermediates examined in this paper have provided a comprehensive understanding of how changes in protonation states lead to complete rearrangements of the catalytic site of the hairpin ribozyme. 
@@ -379,6 +570,7 @@ The conformational landscapes of the different mecanstic intermediates examined 
 % \texttt{\textbackslash mycommand} has been defined in this example,
 % to give italic, mono-spaced text: \mycommand{some text}.
 
+
 % \section{Extra information when writing JACS Communications}
 
 % When producing communications for \emph{J.~Am.\ Chem.\ Soc.}, the
@@ -423,25 +615,45 @@ shown in this document.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{suppinfo}
 
-\begin{table}
-\caption{Summary of the non-standard residues of this chapter. 1. }
-\label{table:int_params}
-\begin{scriptsize}
-\begin{tabular}{c c c c c c}
-\hline
-& Name & Residue Type/Index & Scenario & Charge & Reference\\
-\hline
-\subf{\includegraphics[width=30mm]{figures/chap3/RAP_cut.png}}{} & RAP & A38 & All & 0 & available in \cite{mlynsky_extensive_2010} \\
-\subf{\includegraphics[width=30mm]{figures/chap3/RGM_cut.png}}{} & RGM & G8 & Dianionic & -2 & adapted from \cite{mlynsky_extensive_2010} \\
-\subf{\includegraphics[width=30mm]{figures/chap3/AD_cut.png}}{} & AD  & A-1 & Dianionic & -2 & / \\
-\subf{\includegraphics[width=30mm]{figures/chap3/RAA_cut.png}}{} & RAA & A-1 & Mono-anionic & -2 & adapted from \cite{kumar_mechanistic_2018} \\
-\subf{\includegraphics[width=30mm]{figures/chap3/GAA_cut.png}}{} & GAA & G+1 & Mono-anionic & 0 & adapted from \cite{kumar_mechanistic_2018} \\
-\subf{\includegraphics[width=30mm]{figures/chap3/GSA_cut.png}}{} & GSA & G+1 & Mono-anionic & 0 & adapted from \cite{kumar_mechanistic_2018} \\
-\subf{\includegraphics[width=30mm]{figures/chap3/RAP_clean.png}}{} & RAC & A-1 & All & -1 & / \\
+The overall structure was similar to the equivalent pre-catalytic state used for ligated state simulations (PDB ID: 2OUE), 
+with an RMSD calculated over the nucleic backbone of the 60 common residues evaluated at 0.58~\AA.
+The product crystal structure differed only from the minimal methylated pre-catalytic state
+by the presence of a 9-triethylene glycol linker (S9L) in place of residue 14, which ensured the junction between H2 and H3.
+The linker was kept in the simulation.
 
-\end{tabular}
-\end{scriptsize}
-\end{table}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures_SI/Crystal_Cleaved_States.png}
+    \caption[Comparison of the Cleaved States Crystal Structures]
+    {Comparison of the Cleaved States Crystal Structures: 
+    the 4WJ hairpin ribozyme (PDB ID: 1M5V) in light colors and thin representation, 
+    the minimal hairpin ribozyme (PDB ID: 2P7D) used as initial structure for the cleaved states in this study is strong colors and thick representation.
+    The two catalytic sites differ by only 0.93~\AA, calculated over all heavy atoms appearing here, 
+    that is to say residues A-1, G+1, G8 and A38.}
+    \label{fig:cleaved_crystals}
+\end{figure}
+
+
+% \begin{table}
+% \caption{Summary of the non-standard residues of this chapter. 1. }
+% \label{table:int_params}
+% \begin{scriptsize}
+% \begin{tabular}{c c c c c c}
+% \hline
+% & Name & Residue Type/Index & Scenario & Charge & Reference\\
+% \hline
+% \subf{\includegraphics[width=30mm]{figures_SI/RAP_cut.png}}{} & RAP & A38 & All & 0 & available in \cite{mlynsky_extensive_2010} \\
+% \subf{\includegraphics[width=30mm]{figures_SI/RGM_cut.png}}{} & RGM & G8 & Dianionic & -2 & adapted from \cite{mlynsky_extensive_2010} \\
+% \subf{\includegraphics[width=30mm]{figures_SI/AD_cut.png}}{} & AD  & A-1 & Dianionic & -2 & / \\
+% \subf{\includegraphics[width=30mm]{figures_SI/RAA_cut.png}}{} & RAA & A-1 & Mono-anionic & -2 & adapted from \cite{kumar_mechanistic_2018} \\
+% \subf{\includegraphics[width=30mm]{figures_SI/GAA_cut.png}}{} & GAA & G+1 & Mono-anionic & 0 & adapted from \cite{kumar_mechanistic_2018} \\
+% \subf{\includegraphics[width=30mm]{figures_SI/GSA_cut.png}}{} & GSA & G+1 & Mono-anionic & 0 & adapted from \cite{kumar_mechanistic_2018} \\
+% \subf{\includegraphics[width=30mm]{figures_SI/RAP_clean.png}}{} & RAC & A-1 & All & -1 & / \\
+
+% \end{tabular}
+% \end{scriptsize}
+% \end{table}
 
 \end{suppinfo}
 
@@ -450,6 +662,6 @@ shown in this document.
 %% Notice that the class file automatically sets \bibliographystyle
 %% and also names the section correctly.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\bibliography{achemso-demo}
+\bibliography{Thesis_v14_clean}
 
 \end{document}
