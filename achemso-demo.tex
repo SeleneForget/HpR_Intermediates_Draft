@@ -138,6 +138,7 @@ The HpR is not the only ribozyme to be self-reactive, but it was found to be one
 If we do have proof that all chemical components involved in the self-splicing reaction are part of the RNA itself, we do not 
 know exactly which RNA atoms take part, and neither do we know how exactly do they proceed the self-cleavage. 
 
+
 % MECHANISTIC PRESENTATION 
 %% Argument pro and cons for each ?
 %% Opposition between insights from simulation and experiment
@@ -176,12 +177,32 @@ In parallel to the experimental efforts, the HpR has been studied using \textit{
 Complementary to X-ray crystal studies, molecular dynamics (MD) expands the knowledge gained through structural resolution
 by providing the dynamic behavior of the resolved object. 
 Here, the challenge of studying self-reactive objects is no longer a problem,
-as one can simulate any reactive species without worrying about self-degradation.
-These studies aimed at studying two aspects : first, the conformational landscape of the HpR, from extanded simulation of the full HpR with classical force fields \cite{mlynsky_extensive_2010, mlynsky_reactive_2015,kumar_mechanistic_2018},
-and second, the chemical activity itself, with mixed quantic and classic mechanics (QM/MM) simulations \cite{mlynsky_qmmm_2011, mlynsky_comparison_2014, mlynsky_qmmm_2011, nam_electrostatic_2008, nam_electrostatic_2009,kumar_deciphering_2020}.
-Far from discriminating a mechanistic route over the other, these studies rather support the idea of potentially coexistent mechanistic strategies.
+as one can simulate any reactive species without worrying about self-degradation. 
+%Thus, one can have  the dynamic and chemical behavior of the true self-reactive HpR, without any chemical modification.
+Computational studies of the HpR are of two sorts. First, extended simulation of the full HpR with classical force fields \cite{mlynsky_extensive_2010, mlynsky_reactive_2015,kumar_mechanistic_2018}, 
+which alow for the exploration of the conformational landscape of the HpR\cite{mlynsky_extensive_2010, mlynsky_reactive_2015,kumar_mechanistic_2018}.
+Second, combined quantic and classic mechanics (QM/MM) simulations 
+\cite{ mlynsky_comparison_2014, mlynsky_qmmm_2011, nam_electrostatic_2008, nam_electrostatic_2009,kumar_deciphering_2020},
+which investigate the chemical activity of the catalytic site by simulating the chemical steps of the reaction.
+These two investigations means are usually conducted sequentially, 
+as QM/MM simulation require relevant pre-catalytic initial structures which can only be obtained from prior robust classical MD simulations.
 
-Anyway, they suffer from the inherent limitations of MD: on one hand the lack of accuracy in of the classical force fields,
+The contributions of the classical MD studies can be classified into two opposing pitches.
+The first base iself on study of the catalytic site which has been explicitly constrained the catalytic site elements to ensure the formation of a specific H-bond net-
+work: G8:N1···A-1:O2’, A38:N1···G+1:O5’, G8:N2···G+1:Opro-Rp, and A38:N6···G+1:Opro-
+Rp. 
+This aimed conformation was guided by chemical intuition  on the s itself descriptions of the catalytic site arrange-
+ment have emerged. the general acid-base mechanism and its specific
+requirements for the arrangement of the catalytic site. Veenis et al. \cite{veenis_investigation_2021} and Mlynsky et al. \cite{mlynsky_reactive_2015}.
+Our recent efforts to verify the convergence of the catalytic site conformational landscape%
+focus on the positions of G8:N1 relative to O2’ and A38:N1 relative to O5’. 
+or by analogy with artificial mimics of transition state structures [187] However, they do
+not address the deprotonation process of G8:N1 and paradoxically describe a pre-catalytic
+arrangement that supports a general acid-base pathway while G8 remains protonated [211,
+210].
+
+Far from settling the debate, these \textit{in silico} studies have rather highlighted the complexity of the catalytic site conformational landscape,
+Anyway, they suffer from the inherent limitations of MD: 
 and on the other hand the limited conformational sampling of QM/MM simulations.
 
 
@@ -306,6 +327,20 @@ The detail of this last step is another cornerstone of the debate.
 \paragraph{Pre-catalytic state}
 
 \paragraph{pro-Rp }
+
+\begin{figure}[b!]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/2D_orderedHbonds_A1P-A38H.png}
+    \caption[Overview of the Inline Monoanionic Intermediates (ligated)]
+    {Overview of catalytic site behavior during the converged part of REST2 simulations of the 
+    HpR intermediate states in the inline monoanionic scenario: 
+    intermediate of the pro-Sp pathway (A), 
+    intermediate of the pro-Rp pathway (B). 
+    %All simulations are initialized from crystal structure which \acrshort{PDB} ID is 2P7D.
+    Left: Main combinations of the cleavage pathway key observables (9-key observables combination analysis).
+    Right: 2D distribution of Inline Attack Angle (IAA) and A-1:O2'···G+1:P distance (d$_\mathrm{O2^{\prime}-P}$). See Methods for more details.}
+    \label{fig:2D_int_monoanionic}
+\end{figure}
 
 
 \subsection{Dianionic Scenario}

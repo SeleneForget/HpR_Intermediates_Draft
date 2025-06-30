@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex achemso-demo"] 1750250333.92241 "achemso-demo.aux" "achemso-demo.bbl" "achemso-demo" 1750250819.07655 0
+["bibtex achemso-demo"] 0 "achemso-demo.aux" "achemso-demo.bbl" "achemso-demo" 1750952117.94334 -1
   "./Thesis_v14_clean.bib" 1749719673 623105 03daefc942c8854a4962cb9bbff618dc ""
-  "./acs-achemso-demo.bib" 1750250815 306 2ec6e2c563f7f14bcefed0d36c308168 ""
+  "./acs-achemso-demo.bib" 1750952115 306 2ec6e2c563f7f14bcefed0d36c308168 ""
   "C:/Users/forget/AppData/Local/Programs/MiKTeX/bibtex/bst/achemso/achemso.bst" 1744391408 30283 d4836460953b758317708261b0edc69e ""
-  "achemso-demo.aux" 1750250815 5689 9f4ea48a063d78b689fec4ebed9e1264 "pdflatex"
+  "achemso-demo.aux" 1750952115 3007 4ff6915b1d7b17e1ea983f897efc0c6b "pdflatex"
   (generated)
   "achemso-demo.bbl"
   "achemso-demo.blg"
   (rewritten before read)
-["pdflatex"] 1750250811.11776 "c:/Users/forget/Documents/forget/repositories/HpR_Intermediates_Draft/achemso-demo.tex" "achemso-demo.pdf" "achemso-demo" 1750250819.07833 0
+["pdflatex"] 1750952111.54017 "c:/Users/forget/Documents/forget/repositories/HpR_Intermediates_Draft/achemso-demo.tex" "achemso-demo.pdf" "achemso-demo" 1750952117.94458 0
   "C:/Users/forget/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1749807420 174496 a7a12ca9c69bc00fd94a217984f279cd ""
   "C:/Users/forget/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1749807427 14064 6fcb92cd596a191f00eca2061839df65 ""
   "C:/Users/forget/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1726164933 24265846 7370a257f262c675f4138eb17d247384 ""
@@ -40,7 +40,6 @@
   "C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb" 1247596666 32166 b0c356b15f19587482a9217ce1d8fa67 ""
-  "C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
   "C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
@@ -97,10 +96,11 @@
   "C:/Users/forget/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/forget/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/forget/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "achemso-demo.aux" 1750250815 5689 9f4ea48a063d78b689fec4ebed9e1264 "pdflatex"
-  "achemso-demo.bbl" 1750250334 13406 fe803f4b924565b3414fb973b543b6dd "bibtex achemso-demo"
-  "achemso-demo.tex" 1750250815 36486 b5be8b85d44364a671c88256751165d9 ""
-  "c:/Users/forget/Documents/forget/repositories/HpR_Intermediates_Draft/achemso-demo.tex" 1750250815 36486 b5be8b85d44364a671c88256751165d9 ""
+  "achemso-demo.aux" 1750952115 3007 4ff6915b1d7b17e1ea983f897efc0c6b "pdflatex"
+  "achemso-demo.bbl" 1750946027 0 d41d8cd98f00b204e9800998ecf8427e "bibtex achemso-demo"
+  "achemso-demo.tex" 1750952110 38925 1cced33ecc7f87f00ee93f617ea2ff0d ""
+  "c:/Users/forget/Documents/forget/repositories/HpR_Intermediates_Draft/achemso-demo.tex" 1750952110 38925 1cced33ecc7f87f00ee93f617ea2ff0d ""
+  "figures/2D_orderedHbonds_A1P-A38H.png" 1749720630 297347 59a00cd4b76445592d5cf87695758384 ""
   "figures/All_mecanisms.png" 1749807813 778587 ffad2489fd75a4c193842e5e2d38d7e9 ""
   "figures_SI/Crystal_Cleaved_States.png" 1749720630 1006001 7297d91ba5f90c4fd8c0d8bc2828ecb7 ""
   (generated)
