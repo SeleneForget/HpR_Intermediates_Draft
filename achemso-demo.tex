@@ -275,11 +275,26 @@ The intermediates of the hairpin ribozyme with the most probable protonation sta
 chemical groups at \textit{in vivo} pH.
 The existing force fields do not include the parameters for these non-standard states, 
 which need to be generated specifically for this purpose.
-There are three possible situations:
+There are three possible situations
+
+\paragraph{Initial configurations.}
+As initial structure for the pro-Sp intermediates, 
+we used a L$_\mathrm{1}^{pucker}$ frame from the trajectory provided by Mlynsky et al.
+in which the L$_\mathrm{1}$ population is shown to be stable and which we already discussed previously.
+We chose not to use a L$_\mathrm{1}^{HB}$ structure as the relative stability of the L$_\mathrm{1}$ conformation in this structure remains incompletely understood (see Discussions of the previous chapter).
+
+The simulation of the monoprotic pro-Rp intermediate (see Figure \ref{fig:ProRp_int}) was initiated from an L$_\mathrm{2}$ conformation extracted from the 
+$\chi\mathrm{OL3}\epsilon \zeta_\mathrm{OL1}$ TIP3P pre-catalytic state simulation, 
+which we presented in Chapter \ref{chap:minimal} and Figure \ref{fig:REST2fromPDB}.
+This conformation was chosen for its display of an average RMSD to the crystal structure 
+and for its catalytic site arrangement, which is typical of L$_\mathrm{2}$ classification.
 
 
 
 \subsection{Descriptors.}
+
+Subsequently to our previous work, we label the expored conformation of the catalytic site based on a combination of different descriptors.
+
 
 
 Similarly to the ligated states, 
@@ -320,13 +335,69 @@ leading to the formation of the "AP" intermediate (see Figure \ref{fig:monoanion
 From there, the deprotonated O2' oxygen attacks the phosphorus atom, forming a pentavalent phosphorus transition state.
 The system subsequently proceed an elimination step, with the capture of the proton on the phosphorus oxygen and the departure of the substrate group.
 
+% % Détail fin du mécansme reprotoantion => A garder ou pas ?
+% Two sub-scenarios are possible, with either a direct or an A38-mediated capture of the proton by O5'.\\
+% In the mediated scenario, A38$^+$ transfers its H1 to O5' during the elimination step. 
+% The same proton is captured back by the adenosine in a following double proton transfer, with 
+% O5' accepting the proton from the phosphate oxygen and releases its own proton back to A38.
+% We underline that this 'sub-version' of the inline mono-anionic mechanism 
+% involves chemically A38 in the cleavage reaction \cite{mlynsky_extensive_2010}, coherently with the reaction dependence on the presence of this residue.
+% The detail of this last step is another cornerstone of the debate. 
 
-The detail of this last step is another cornerstone of the debate. 
+The mono-anionic mechanism has two prospects, namely the pro-Sp (O1P) and the pro-Rp (O2P) pathways.
+Although they are appearing symmetrical on paper, these two pathways are not equivalent in terms of local arrangements and energy.
+Indeed, they imply different H-bond acceptors for HO2', 
+meaning that they are initiated from conformations of the catalytic site which probably diverge in stability.
+% Not sure this should arrive here.
+Concretely, the pro-Sp pathway originates from a conformation in which O-proSp is involved in a H-bon wiht O2', 
+such as in the L$_\mathrm{1}$ conformation of the pre-catalytic state,
+whereas the pro-Rp pathway is to be initiated from a conformation demonstrating a O-proSp O2'H-bon wiht O2', 
+which corresponds to the L$_\mathrm{2}$ or L$_\mathrm{C}$ conformations (see Methods for this conformational labelling).
 
 
-\paragraph{Pre-catalytic state}
 
-\paragraph{pro-Rp }
+
+\paragraph{Pre-catalytic state.}
+% Est-ce que 'lon fait un paragraphe sur ça ? 
+This matter has already been adressed in our previous study \cite{forget} in which we sampled the conformational landscape ofthe pre-catalytic HpR.
+We have shown ...,  
+Here again, the question of the relative stability of the L$_\mathrm{2}$ conformation compared to L$_\mathrm{1}$ 
+or to the L$_\mathrm{C}$ arrangements proves to be central to this debate. Without any undoubtful arguments,
+we choose to considere both pro-Sp and pro-Rp accordingly, leaving to te side the remaining question of the instability of the L$_\mathrm{1}$ conformation.
+
+%Along this mechanism, several protonation states of the catalytic site emerge. We will abusively call them intermediate although we have no evidence that these species correspond to local minima and show any metastablity.
+
+%% ISSINF Here figure of O1P- O2' vs O2P-2' in pre-cat
+
+\paragraph{AP intermediates. }
+
+%pro-Sp
+Starting with the pro-Sp pathway, we sampled the HpR structure in which A-1:O2' is deprotonated, 
+and the pro-Sp oxygen of the scissile phosphate is protonated (see Figure \ref{fig:ProSp_int}).
+
+Ounce HO2' has been transferred to the pro-Sp oxygen, the nucleophilic O2' is poised to attack through its lone electron pair.
+The key observables are the inline attack angle (IAA) and d$_\mathrm{O2^{\prime}-P}$, 
+which we represented in a 2D distribution plot in Figure \ref{fig:2D_int_monoanionic} A, right.
+The observation is unequivocal: the catalytic site is arranged perfectly for the nucleophilic attack, 
+with more than 73~\% of the frames in the \textit{reactive} region (IAA > 140° and d$_\mathrm{O2^{\prime}-P}$ < 3.5~\AA).
+%The HO2' is strongly held by the pro-Sp oxygen, with 100\% of the frames displaying the H-bond A-1:O2'···G+1:Opro-Sp.
+On the other side of the scissile phosphate, A38 is properly positioned 
+and faces the leaving-group O5' oxygen, with 88$\%$ of the d$_\mathrm{O5^{\prime}-A38:N1}$ < 3.5~\AA.
+
+Additionally, the L$_\mathrm{1}$ is conserved if not reinforced, with 71.0~\% 
+of the frames in this conformation during the converged part of the simulation, the rest being unlabeled arrangements.
+This conclusion is detailed by the catalytic 9-key observables combination analysis 
+which reveals a clear dominance of the L$_\mathrm{1}$ conformation (see \ref{fig:2D_int_monoanionic} A, left, 
+and see Methods of Chapter \ref{chap:minimal} for more detail regarding this type of analysis).
+
+The combination groups which do not fall into the L$_\mathrm{1}$ criteria are very similar to it, 
+with only the puckering pseudo rotation angle of A-1 shifting away from its C2'-endo range.
+The  9-key observables combination analysis shows the clear domination of combination groups closely related 
+and highly, 
+with only 9.6\% representing rare combinations and more than four combination groups comprising $\geq$5\% of the population.
+
+
+
 
 \begin{figure}[b!]
     \centering
@@ -342,8 +413,61 @@ The detail of this last step is another cornerstone of the debate.
     \label{fig:2D_int_monoanionic}
 \end{figure}
 
+Recent experiments have explored the importance of Watson-Crick G+1---C25 base pair,
+evaluating the evolution of kinetics and thermodynamics during G+1---C25 breaking \cite{cottrell_functional_2007}.
+A clear correlation emerged between internal equilibrium towards ligation 
+and the increasing number of hydrogen bonds formed between residues +1 and 25.
+These results suggest a dual role for the G+1-C25 base pair: not only does it stabilize interdomain interactions,
+but it also constrains the catalytic site to an optimal geometry.
+This is how the authors interpret the greater sensitivity of the ligation rate to G+1 and C25 mutations,
+as the precise alignment of the catalytic site should be even more crucial in the direction of ligation,
+when the 2',3'-cyclic phosphate and 5'-hydroxyl termini are covalently linked.\\
+
+%% pro-SP
+% Building on these observations, 
+% the pro-Sp intermediate seems to be a very favorable route for the inline monoanionic scenario. 
+% However, the major drawback of the scenario, 
+% which is the instability of the L$_\mathrm{1}$ conformation in the pre-catalytic state, needs to be taken into account.
+% To properly assess the feasibility of this inline monoanionic pro-Sp mechanism, 
+% the evaluation of the energy cost of conformational change from L$_\mathrm{2}$ to L$_\mathrm{1}$ remains to be done. 
+% In the meantime, we propose to explore the pro-Rp pathway, which aligns better  
+% with the pre-catalytic state conformational landscape and the prevalence of the L$_\mathrm{2}$ conformation.
+
+%pro-Rp
+Similarly to the pro-Sp pathway, we have plotted the IAA versus the d$_\mathrm{O2^{\prime}-P}$ 
+in Figure \ref{fig:2D_int_monoanionic} B, right.
+A local minimum, absent in the pre-catalytic state 2D distribution, 
+emerged in the \textit{IAA}$\simeq $ 155° and d$_\mathrm{O2^{\prime}-P}$ $\simeq$ 3.25\AA\ region.
+These frames are ideally arranged for the nucleophilic attack and represent 35.1~\% of the converged REST2 simulation.
+
+Additionally, this region features the rare presence of the L$_\mathrm{C}$ conformation, 
+with ~3.5\% of the $IAA\geq $140° frames adopting this arrangement.
+This caught our attention, as in L$_\mathrm{C}$, the A-1 ribose is in a C2'-endo pucker.
+This specific puckering angle has been at the center of the discussion of the pre-catalytic state conformational space (Chapter \ref{chap:minimal}).
+On one hand, most of the crystal structures of the HpR pre-catalytic state display A-1 in C2'-endo.
+On the other, in all trajectories initiated from the crystal structure, A-1 pucker irrevocably flips from C2'-endo to C3'-endo.
+Thus, we were intrigued by the presence of the L$_\mathrm{C}$ conformation in the pro-Rp intermediate at converged times.
+When looking closer into the time block analysis of the conformational labeling, we observed a neat diminution of the L$_\mathrm{C}$ conformation.
+Thus, the few frames classified as L$_\mathrm{C}$ could be a remnant of the initial conformation, and their eventual disappearance is probable (see Appendices).
+
+
+\paragraph{Cleaved State}
+
+
+
 
 \subsection{Dianionic Scenario}
+% Question : est-ce qu'on le laisse en main ? C'était assez exploratoire 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/NewHbond_2D_Gp1N2O2P_3Dview}
+    \caption[Correlation between IAA and d$_\mathrm{Opro-Rp-G+1:N2}$ in the Inline Monoanionic Scenario pro-Rp Intermediate]
+    {2D distribution of the distances between protonated Opro-Rp phosphate oxygen and G+1:N2 against the Inline Attack Angle (IAA) in the protonated pro-Rp intermediate of the inline monoanionic scenario (A),
+    together with a 3D view of the catalytic site in the high IAA region (B). The d$_\mathrm{OproRp-G+1:N2}$ 
+    is highlighted in yellow to emphasize the role of the 2-amino group of G+1 in the stabilization of the IAA flat junction.}
+    \label{fig:Gp1HbonApproSp}
+\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
@@ -669,6 +793,18 @@ The linker was kept in the simulation.
     \label{fig:cleaved_crystals}
 \end{figure}
 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures_SI/pairs.png}
+    \caption[Base Pairing in Ligated and Cleaved States for the Monoanionic Scenario]
+    {Proportion of the trajectory in which helices H1 and H2 base pairs 
+    are formed in the ligated (in pale colors) and cleaved (in strong colors) states of the monoanionic scenario. 
+    All Watson-Crick base pairs are evaluated, including the interloop G+1-C25 ribose zipper-member one (in green). 
+    The secondary structure is schemed for easing the reading. 
+    The scissible phosphate is represented by a black lightning bolt.}
+    \label{fig:ccH_prod_basepair}
+\end{figure}
 
 % \begin{table}
 % \caption{Summary of the non-standard residues of this chapter. 1. }

@@ -153,6 +153,12 @@ INPUT .\figures\2D_orderedHbonds_A1P-A38H.png
 INPUT .\figures\2D_orderedHbonds_A1P-A38H.png
 INPUT .\figures\2D_orderedHbonds_A1P-A38H.png
 INPUT .\figures\2D_orderedHbonds_A1P-A38H.png
+INPUT .\figures\NewHbond_2D_Gp1N2O2P_3Dview.png
+INPUT .\figures\NewHbond_2D_Gp1N2O2P_3Dview.png
+INPUT .\figures\NewHbond_2D_Gp1N2O2P_3Dview.png
+INPUT .\figures\NewHbond_2D_Gp1N2O2P_3Dview.png
+INPUT .\figures\NewHbond_2D_Gp1N2O2P_3Dview.png
+INPUT .\figures\NewHbond_2D_Gp1N2O2P_3Dview.png
 INPUT .\figures_SI\Crystal_Cleaved_States.png
 INPUT .\figures_SI\Crystal_Cleaved_States.png
 INPUT .\figures_SI\Crystal_Cleaved_States.png
@@ -160,6 +166,13 @@ INPUT .\figures_SI\Crystal_Cleaved_States.png
 INPUT .\figures_SI\Crystal_Cleaved_States.png
 INPUT .\figures_SI\Crystal_Cleaved_States.png
 INPUT .\figures_SI\Crystal_Cleaved_States.png
+INPUT .\figures_SI\pairs.png
+INPUT .\figures_SI\pairs.png
+INPUT .\figures_SI\pairs.png
+INPUT .\figures_SI\pairs.png
+INPUT .\figures_SI\pairs.png
+INPUT .\figures_SI\pairs.png
+INPUT .\figures_SI\pairs.png
 INPUT .\achemso-demo.bbl
 INPUT .\achemso-demo.bbl
 INPUT achemso-demo.bbl
@@ -175,6 +188,10 @@ INPUT C:\Users\forget\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\
 INPUT C:\Users\forget\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\forget\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
 INPUT C:\Users\forget\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
+INPUT C:\Users\forget\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\forget\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\forget\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\forget\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\forget\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\forget\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\forget\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
