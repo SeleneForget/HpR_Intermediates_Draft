@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: achemso-demo.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: achemso.bst
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: acs-achemso-demo.bib
+Database file #2: Thesis_v14_clean.bib
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "wang_replica_2015"
+Warning--I didn't find a database entry for "forget"
+achemso 2025-04-11 v3.13j
+You've used 48 entries,
+            2538 wiz_defined-function locations,
+            1077 strings with 21462 characters,
+and the built_in function-call counts, 19218 in all, are:
+= -- 1456
+> -- 1383
+< -- 14
++ -- 522
+- -- 474
+* -- 1933
+:= -- 2686
+add.period$ -- 94
+call.type$ -- 48
+change.case$ -- 4
+chr.to.int$ -- 2
+cite$ -- 48
+duplicate$ -- 881
+empty$ -- 1178
+format.name$ -- 532
+if$ -- 3595
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 310
+num.names$ -- 141
+pop$ -- 180
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 47
+stack$ -- 0
+substring$ -- 1386
+swap$ -- 1137
+text.length$ -- 94
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 333
+warning$ -- 0
+while$ -- 190
+width$ -- 0
+write$ -- 547
+(There were 3 warnings)

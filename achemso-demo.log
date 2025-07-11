@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.12)  1 JUL 2025 16:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.12)  10 JUL 2025 18:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -358,262 +358,140 @@ Package chemgreek Info: Activating mapping `default' on line 85.
 [1
 
 {C:/Users/forget/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-
-Package natbib Warning: Citation `kuzmin_role_2005' on page 2 undefined on input line 150.
-
-
-Package natbib Warning: Citation `rupert_crystal_2001' on page 2 undefined on input line 150.
-
-
-Package natbib Warning: Citation `salter_water_2006' on page 2 undefined on input line 150.
+<figures/Presentation_HpR_temporaire.png, id=14, 643.6547pt x 371.88937pt>
+File: figures/Presentation_HpR_temporaire.png Graphic file (type png)
+<use figures/Presentation_HpR_temporaire.png>
+Package pdftex.def Info: figures/Presentation_HpR_temporaire.png  used on input line 150.
+(pdftex.def)             Requested size: 469.75539pt x 271.4259pt.
 
 
-Package natbib Warning: Citation `kath-schorr_general_2012' on page 2 undefined on input line 166.
-
-
-
-[2]
-
-Package natbib Warning: Citation `mlynsky_extensive_2010' on page 3 undefined on input line 182.
-
-
-Package natbib Warning: Citation `mlynsky_reactive_2015' on page 3 undefined on input line 182.
-
-
-Package natbib Warning: Citation `kumar_mechanistic_2018' on page 3 undefined on input line 182.
-
-
-Package natbib Warning: Citation `mlynsky_extensive_2010' on page 3 undefined on input line 183.
-
-
-Package natbib Warning: Citation `mlynsky_reactive_2015' on page 3 undefined on input line 183.
-
-
-Package natbib Warning: Citation `kumar_mechanistic_2018' on page 3 undefined on input line 183.
-
-
-Package natbib Warning: Citation `mlynsky_comparison_2014' on page 3 undefined on input line 185.
-
-
-Package natbib Warning: Citation `mlynsky_qmmm_2011' on page 3 undefined on input line 185.
-
-
-Package natbib Warning: Citation `nam_electrostatic_2008' on page 3 undefined on input line 185.
-
-
-Package natbib Warning: Citation `nam_electrostatic_2009' on page 3 undefined on input line 185.
-
-
-Package natbib Warning: Citation `kumar_deciphering_2020' on page 3 undefined on input line 185.
-
-
-Package natbib Warning: Citation `veenis_investigation_2021' on page 3 undefined on input line 196.
-
-
-Package natbib Warning: Citation `mlynsky_reactive_2015' on page 3 undefined on input line 196.
-
-
-
-[3]
-<figures/All_mecanisms.png, id=21, 3674.47781pt x 1604.99625pt>
+[2 <./figures/Presentation_HpR_temporaire.png>]
+<figures/All_mecanisms.png, id=20, 3674.47781pt x 1604.99625pt>
 File: figures/All_mecanisms.png Graphic file (type png)
 <use figures/All_mecanisms.png>
-Package pdftex.def Info: figures/All_mecanisms.png  used on input line 223.
+Package pdftex.def Info: figures/All_mecanisms.png  used on input line 167.
 (pdftex.def)             Requested size: 469.75539pt x 205.17921pt.
 
 
-LaTeX Warning: Reference `fig:monoanionic_general' on page 4 undefined on input line 228.
-
-
-LaTeX Warning: Reference `chap:hpR_mechanism' on page 4 undefined on input line 228.
-
-
-LaTeX Warning: Reference `fig:monoanionic_general' on page 4 undefined on input line 228.
-
-
-LaTeX Warning: Reference `chap:hpR_mechanism' on page 4 undefined on input line 228.
-
-
-Package natbib Warning: Citation `abraham_gromacs_2015' on page 4 undefined on input line 250.
-
-
-Package natbib Warning: Citation `tribello_plumed_2014' on page 4 undefined on input line 250.
-
-
-Package natbib Warning: Citation `the_plumed_consortium_promoting_2019' on page 4 undefined on input line 250.
+[3 <./figures/All_mecanisms.png>]
+Overfull \hbox (1.12166pt too wide) in paragraph at lines 210--225
+\OT1/cmr/m/n/12 wiht the gen-eral di-an-ionic sce-nario: G8:N1\TS1/cmr/m/n/12 ···\OT1/cmr/m/n/12 A-1:O2', A38:N1\TS1/cmr/m/n/12 ···\OT1/cmr/m/n/12 G+1:O5', G8:N2\TS1/cmr/m/n/12 ···\OT1/cmr/m/n/12 G+1:Opro-
+ []
 
 
 
-[4 <./figures/All_mecanisms.png>]
-
-LaTeX Warning: Reference `tab:hpR_crystals' on page 5 undefined on input line 255.
-
-
-Package natbib Warning: Citation `torelli_comparison_2007' on page 5 undefined on input line 255.
-
-
-Package natbib Warning: Citation `torelli_comparison_2007' on page 5 undefined on input line 260.
-
-
+[4]
 
 [5]
 
-LaTeX Warning: Reference `fig:ProRp_int' on page 6 undefined on input line 286.
-
-
-LaTeX Warning: Reference `chap:minimal' on page 6 undefined on input line 288.
-
-
-LaTeX Warning: Reference `fig:REST2fromPDB' on page 6 undefined on input line 288.
-
-
-
 [6]
 
-LaTeX Warning: Reference `fig:Int_REST2_Convergence' on page 7 undefined on input line 318.
-
-
-LaTeX Warning: Reference `fig:Int_REST2_Convergence' on page 7 undefined on input line 320.
-
-
-LaTeX Warning: Reference `fig:monoanionic_general' on page 7 undefined on input line 334.
-
-
-
 [7]
+LaTeX Font Info:    Trying to load font information for OT1+qcr on input line 334.
+ (C:\Users\forget\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ot1qcr.fd
+File: ot1qcr.fd 2009/09/25 v1.2 font definition file for OT1/qcr
+)
 
-Package natbib Warning: Citation `forget' on page 8 undefined on input line 362.
-
-
-LaTeX Warning: Reference `fig:ProSp_int' on page 8 undefined on input line 376.
-
-
-LaTeX Warning: Reference `chap:minimal' on page 8 undefined on input line 391.
+Package natbib Warning: Citation `wang_replica_2015' on page 8 undefined on input line 347.
 
 
 
-[8]
-<figures/2D_orderedHbonds_A1P-A38H.png, id=45, 3877.48625pt x 2340.745pt>
+[8{C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rmm.enc}]
+
+LaTeX Warning: Reference `fig:Int_REST2_Convergence' on page 9 undefined on input line 390.
+
+
+LaTeX Warning: Reference `fig:Int_REST2_Convergence' on page 9 undefined on input line 391.
+
+
+
+[9]
+
+LaTeX Warning: Reference `fig:monoanionic_general' on page 10 undefined on input line 412.
+
+
+Package natbib Warning: Citation `forget' on page 10 undefined on input line 450.
+
+
+
+[10]
+
+LaTeX Warning: Reference `fig:ProSp_int' on page 11 undefined on input line 464.
+
+
+LaTeX Warning: Reference `chap:minimal' on page 11 undefined on input line 479.
+
+<figures/2D_orderedHbonds_A1P-A38H.png, id=52, 3877.48625pt x 2340.745pt>
 File: figures/2D_orderedHbonds_A1P-A38H.png Graphic file (type png)
 <use figures/2D_orderedHbonds_A1P-A38H.png>
-Package pdftex.def Info: figures/2D_orderedHbonds_A1P-A38H.png  used on input line 404.
+Package pdftex.def Info: figures/2D_orderedHbonds_A1P-A38H.png  used on input line 492.
 (pdftex.def)             Requested size: 469.75539pt x 283.55605pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 504--513
 
-LaTeX Warning: Reference `chap:minimal' on page 9 undefined on input line 436.
-
-
-
-[9 <./figures/2D_orderedHbonds_A1P-A38H.png>]
-<figures/NewHbond_2D_Gp1N2O2P_3Dview.png, id=50, 3521.155pt x 1832.8475pt>
-File: figures/NewHbond_2D_Gp1N2O2P_3Dview.png Graphic file (type png)
-<use figures/NewHbond_2D_Gp1N2O2P_3Dview.png>
-Package pdftex.def Info: figures/NewHbond_2D_Gp1N2O2P_3Dview.png  used on input line 453.
-(pdftex.def)             Requested size: 281.8561pt x 146.68672pt.
-
-
-Package natbib Warning: Citation `veenis_investigation_2021' on page 10 undefined on input line 470.
-
-
-
-[10 <./figures/NewHbond_2D_Gp1N2O2P_3Dview.png>]
-
-Package natbib Warning: Citation `kath-schorr_general_2012' on page 11 undefined on input line 478.
-
-
-Package natbib Warning: Citation `wilson_hairpin_2011' on page 11 undefined on input line 478.
-
-
-Package natbib Warning: Citation `torelli_comparison_2007' on page 11 undefined on input line 486.
-
-
-Package natbib Warning: Citation `lebruska_rescue_2002' on page 11 undefined on input line 491.
-
-
-Package natbib Warning: Citation `bevilacqua_mechanistic_2003' on page 11 undefined on input line 491.
-
-
-Package natbib Warning: Citation `kuzmin_role_2004' on page 11 undefined on input line 491.
-
-
-Package natbib Warning: Citation `nahas_observation_2004' on page 11 undefined on input line 491.
-
-
-Package natbib Warning: Citation `wilson_nucleobase_2006' on page 11 undefined on input line 491.
-
-
-Package natbib Warning: Citation `wilson_hairpin_2011' on page 11 undefined on input line 491.
-
-
-Package natbib Warning: Citation `mlynsky_extensive_2010' on page 11 undefined on input line 492.
-
-
-Package natbib Warning: Citation `mlynsky_reactive_2015' on page 11 undefined on input line 492.
-
-
-Package natbib Warning: Citation `benayad_molecular_2022' on page 11 undefined on input line 498.
-
-
-Package natbib Warning: Citation `benayad_molecular_2023' on page 11 undefined on input line 498.
-
-
-Package natbib Warning: Citation `florian_phosphate_1998' on page 11 undefined on input line 499.
-
-
-Package natbib Warning: Citation `duarte_resolving_2015' on page 11 undefined on input line 499.
-
-
-Package natbib Warning: Citation `warshel_electrostatic_2006' on page 11 undefined on input line 501.
+ []
 
 
 
 [11]
 
-Package natbib Warning: Citation `mlynsky_comparison_2014' on page 12 undefined on input line 524.
-
-
-Package natbib Warning: Citation `mlynsky_qmmm_2011' on page 12 undefined on input line 524.
-
-
-Package natbib Warning: Citation `nam_electrostatic_2008' on page 12 undefined on input line 524.
+LaTeX Warning: Reference `chap:minimal' on page 12 undefined on input line 534.
 
 
 
-[12]
+[12 <./figures/2D_orderedHbonds_A1P-A38H.png>]
+<figures/NewHbond_2D_Gp1N2O2P_3Dview.png, id=62, 3521.155pt x 1832.8475pt>
+File: figures/NewHbond_2D_Gp1N2O2P_3Dview.png Graphic file (type png)
+<use figures/NewHbond_2D_Gp1N2O2P_3Dview.png>
+Package pdftex.def Info: figures/NewHbond_2D_Gp1N2O2P_3Dview.png  used on input line 551.
+(pdftex.def)             Requested size: 281.8561pt x 146.68672pt.
 
-[13]
-<figures_SI/Crystal_Cleaved_States.png, id=65, 2520.41624pt x 1476.51625pt>
+
+[13 <./figures/NewHbond_2D_Gp1N2O2P_3Dview.png>]
+
+[14]
+
+[15]
+
+[16]
+<figures_SI/Crystal_Cleaved_States.png, id=77, 2520.41624pt x 1476.51625pt>
 File: figures_SI/Crystal_Cleaved_States.png Graphic file (type png)
 <use figures_SI/Crystal_Cleaved_States.png>
-Package pdftex.def Info: figures_SI/Crystal_Cleaved_States.png  used on input line 776.
+Package pdftex.def Info: figures_SI/Crystal_Cleaved_States.png  used on input line 867.
 (pdftex.def)             Requested size: 375.80574pt x 220.13863pt.
-<figures_SI/pairs.png, id=66, 1823.81375pt x 4197.6825pt>
+<figures_SI/pairs.png, id=78, 1823.81375pt x 4197.6825pt>
 File: figures_SI/pairs.png Graphic file (type png)
 <use figures_SI/pairs.png>
-Package pdftex.def Info: figures_SI/pairs.png  used on input line 789.
+Package pdftex.def Info: figures_SI/pairs.png  used on input line 880.
 (pdftex.def)             Requested size: 187.89928pt x 432.41096pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(achemso-demo.bbl)
+(achemso-demo.bbl
+
+[17]
+
+[18 <./figures_SI/Crystal_Cleaved_States.png>]
+
+[19 <./figures_SI/pairs.png>]
+
+[20]
+
+[21]
+
+[22]
+Underfull \hbox (badness 1810) in paragraph at lines 415--423
+\OT1/cmr/m/n/12 bond for-ma-tion in abi-otic con-di-tions with re-ac-tive neu-ral net-work po-ten-tials.
+ []
+
+)
 
 Package natbib Warning: There were undefined citations.
 
 
 
-[14]
-LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 828.
-
-Overfull \vbox (84.86082pt too high) detected at line 828
- []
-
-
-
-[15 <./figures_SI/Crystal_Cleaved_States.png>]
-
-[16 <./figures_SI/pairs.png>] (achemso-demo.aux)
+[23] (achemso-demo.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
@@ -624,17 +502,17 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7092 strings out of 473898
- 126229 string characters out of 5726007
+ 7305 strings out of 473898
+ 132247 string characters out of 5726007
  1933960 words of memory out of 5000000
- 29873 multiletter control sequences out of 15000+600000
- 568226 words of font info for 71 fonts, out of 8000000 for 9000
+ 30083 multiletter control sequences out of 15000+600000
+ 567722 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,131p,430b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\forget\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on achemso-demo.pdf (16 pages, 4755375 bytes).
+ 84i,8n,131p,812b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\forget\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qcrr.pfb>
+Output written on achemso-demo.pdf (23 pages, 4876614 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
+ 172 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
