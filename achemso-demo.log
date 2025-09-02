@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.12)  10 JUL 2025 18:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.12)  23 JUL 2025 16:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -361,7 +361,7 @@ Package chemgreek Info: Activating mapping `default' on line 85.
 <figures/Presentation_HpR_temporaire.png, id=14, 643.6547pt x 371.88937pt>
 File: figures/Presentation_HpR_temporaire.png Graphic file (type png)
 <use figures/Presentation_HpR_temporaire.png>
-Package pdftex.def Info: figures/Presentation_HpR_temporaire.png  used on input line 150.
+Package pdftex.def Info: figures/Presentation_HpR_temporaire.png  used on input line 155.
 (pdftex.def)             Requested size: 469.75539pt x 271.4259pt.
 
 
@@ -435,21 +435,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 504--513
 
 [11]
 
-LaTeX Warning: Reference `chap:minimal' on page 12 undefined on input line 534.
-
-
-
 [12 <./figures/2D_orderedHbonds_A1P-A38H.png>]
+
+LaTeX Warning: Reference `chap:minimal' on page 13 undefined on input line 534.
+
 <figures/NewHbond_2D_Gp1N2O2P_3Dview.png, id=62, 3521.155pt x 1832.8475pt>
 File: figures/NewHbond_2D_Gp1N2O2P_3Dview.png Graphic file (type png)
 <use figures/NewHbond_2D_Gp1N2O2P_3Dview.png>
 Package pdftex.def Info: figures/NewHbond_2D_Gp1N2O2P_3Dview.png  used on input line 551.
 (pdftex.def)             Requested size: 281.8561pt x 146.68672pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13 <./figures/NewHbond_2D_Gp1N2O2P_3Dview.png>]
 
-[14]
+
+[13]
+
+[14 <./figures/NewHbond_2D_Gp1N2O2P_3Dview.png>]
 
 [15]
 
@@ -462,12 +464,17 @@ Package pdftex.def Info: figures_SI/Crystal_Cleaved_States.png  used on input li
 <figures_SI/pairs.png, id=78, 1823.81375pt x 4197.6825pt>
 File: figures_SI/pairs.png Graphic file (type png)
 <use figures_SI/pairs.png>
-Package pdftex.def Info: figures_SI/pairs.png  used on input line 880.
+Package pdftex.def Info: figures_SI/pairs.png  used on input line 882.
 (pdftex.def)             Requested size: 187.89928pt x 432.41096pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<figures_SI/SI_convergence_chap3.png, id=79, 3605.47pt x 3798.19pt>
+File: figures_SI/SI_convergence_chap3.png Graphic file (type png)
+<use figures_SI/SI_convergence_chap3.png>
+Package pdftex.def Info: figures_SI/SI_convergence_chap3.png  used on input line 895.
+(pdftex.def)             Requested size: 375.80574pt x 395.89496pt.
 (achemso-demo.bbl
 
 [17]
@@ -476,11 +483,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19 <./figures_SI/pairs.png>]
 
-[20]
+[20 <./figures_SI/SI_convergence_chap3.png>]
 
 [21]
 
 [22]
+
+[23]
 Underfull \hbox (badness 1810) in paragraph at lines 415--423
 \OT1/cmr/m/n/12 bond for-ma-tion in abi-otic con-di-tions with re-ac-tive neu-ral net-work po-ten-tials.
  []
@@ -491,7 +500,7 @@ Package natbib Warning: There were undefined citations.
 
 
 
-[23] (achemso-demo.aux)
+[24] (achemso-demo.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
@@ -502,17 +511,17 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7305 strings out of 473898
- 132247 string characters out of 5726007
- 1933960 words of memory out of 5000000
- 30083 multiletter control sequences out of 15000+600000
+ 7312 strings out of 473898
+ 132540 string characters out of 5726007
+ 1934960 words of memory out of 5000000
+ 30090 multiletter control sequences out of 15000+600000
  567722 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,8n,131p,812b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\forget\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/forget/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qcrr.pfb>
-Output written on achemso-demo.pdf (23 pages, 4876614 bytes).
+Output written on achemso-demo.pdf (24 pages, 6133339 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
+ 177 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

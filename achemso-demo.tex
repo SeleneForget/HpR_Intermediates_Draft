@@ -55,7 +55,7 @@
 \affiliation[ENS]
 {CPCV, Département de Chimie, École Normale Supérieure, PSL University, Sorbonne University, CNRS, 75005 Paris}
 \email{selene.forget@ens.psl.eu}
-\author{I. Ken Groupleader}
+\author{Guillaume Stirnemann}
 \email{guillaume.stirnemann@ens.psl.eu}
 \affiliation[ENS]
 {CPCV, Département de Chimie, École Normale Supérieure, PSL University, Sorbonne University, CNRS, 75005 Paris}
@@ -122,28 +122,33 @@
 %% Start the main part of the manuscript here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
-The discovery of catalytic RNAs, or ribozymes, have drastically changed our view of biological catalysis, 
-proving that cell activity can be undertaken by more than proteins. 
-Yet the full comprehension of the chemistry at play in these systems remains uncertain, 
-with notably remaining debates on how mechanistically does the catalyst perform the reaction. 
+The discovery of catalytic RNAs, or ribozymes, 
+drastically changed our understanding of biological catalysis by demonstrating 
+that cellular activities are not exclusively performed by proteins.
+However, the detailed chemical mechanisms underlying ribozyme catalysis remain uncertain, 
+with ongoing debates regarding how these catalysts facilitate their reactions.
+
 \selrev{Ettoffer un peu ici. Peut être faire un petit inventaire de ce que l'on connait des autres ryb ?}
 
-Among the most-studied ribozymes outstands the hairpin ribozyme (HpR), which performs the cleavage of a phosphodiester bond upon its own backbone,
-with a 3'-5' polymeric linkage of its nucleic backbone replaced by a 2'-3' cyclic terminating linkage \cite{fedor_structure_2000,muller_many_2012}.  
-The HpR is not the only ribozyme to be self-reactive, but it was found to be one of the few to be able to do so without requiring any ion\cite{chowrira_extensive_1992, hampel_unique_1997, nesbitt_unusual_1997, young_metal_1997, nesbitt_internal_1999}. 
+
+Among the most studied ribozymes, the hairpin ribozyme (HpR) stands out for its ability to cleave a phosphodiester bond within its own backbone, replacing a 3'-5' polymeric linkage with a 2'-3' cyclic terminating linkage \cite{fedor_structure_2000,muller_many_2012}.
+Although HpR is not the only self-reactive ribozyme, it is one of the few capable of catalyzing this reaction without the requirement for divalent metal ions \cite{chowrira_extensive_1992, hampel_unique_1997, nesbitt_unusual_1997, young_metal_1997, nesbitt_internal_1999}.
 % Enjeu globau : mais commentles ARNs s'y prennent ils ? Prendre un example d'itérêt : sans ion, reaction de self-cleavage du HpR.
 % Pourquoi est il difficile de trancher le débat ? Object auto reactif difficile à étudier expérimentalement
 %% Du coup on peut faire de la simulation a partir des structures dont l'ont dispose mais pas facile de tracnher le débat car objet très flexibles
 %Additionally, and despite being characterized as a self-cleaving specie, its chemical equilibrium is rather in favor of ligation.
-If we do have proof that all chemical components involved in the self-splicing reaction are part of the RNA itself, we do not 
-know exactly which RNA atoms take part, and neither do we know how exactly do they proceed the self-cleavage. 
+Although it is established that all chemical components required for the self-splicing reaction are part of the RNA itself, 
+ we do not know exactly which RNA atoms take part, nor do we know exactly how they proceed with the self-cleavage.
 % MECHANISTIC PRESENTATION 
 %% Argument pro and cons for each ?
 %% Opposition between insights from simulation and experiment
-The central step of this transphosphoesterification process is an addition-elimination step, which involved the formation of a pentavalent phosphorus transition state,
-and requires the perfect alignment of the nucleophilic group, O2', the central phosphorus and the leaving group, O5'.
-For this to occur, two key questions arise: how is the nucleophilic group activated prior to the addition step?
-And how is the departing group activated prior to the elimination step?
+The central step of this transphosphoesterification process is an addition–elimination reaction 
+that involves formation of a pentavalent phosphorus transition state 
+and requires precise alignment of the nucleophilic group (O2'), the central phosphorus atom, and the leaving group (O5').
+Building from there, two key questions arise: 
+(i) how is the nucleophilic group activated prior to the addition step? and 
+(ii) how is the departing group activated prior to the elimination step?
+
 
 \begin{figure}
     \centering
@@ -153,14 +158,9 @@ And how is the departing group activated prior to the elimination step?
 \end{figure}
 
 
-Mutagenesis experiments \cite{kuzmin_role_2005}, reinforced by structural resolution studies \cite{rupert_crystal_2001,salter_water_2006, spitale_identification_2009, macelrevey_structural_2008},
-have demonstrated that two surrounding nucleobases, G8 and A38, are (i) mandatory for the chemical activity and (ii) in the direct neighbourhood of the A-1 --- G+1 junction.
-From there, a first mechanistic scenarios was proposed\cite{bevilacqua_mechanistic_2003}: the dianionic scenario proposes that both G8 and A38 are directly involved, 
-acting respectively as the general base that activates the nucleophile O2' by capturing its proton, 
-and as the general acid that reprotonates the leaving group O5' after the elimination step (see Figure \ref{fig:all_mecas} A)\cite{bevilacqua_mechanistic_2003}.
-Despite supporting pH-dependency experiments\cite{wilson_nucleobase_2006, kath-schorr_general_2012} and matching transition state arrangements\cite{rupert_transition_2002}, this cleavage scenario suffers from one major inconsistency, 
-which is the necessary prior deprotonation but \textit{in-vivo} impractical of the N1 atom of G8 nucleobase\cite{cottrell_ph_2011}.
-
+Mutagenesis experiments \cite{kuzmin_role_2005}, reinforced by structural resolution studies \cite{rupert_crystal_2001,salter_water_2006,spitale_identification_2009,macelrevey_structural_2008}, have demonstrated that two surrounding nucleobases, G8 and A38, are mandatory for the chemical activity and are in the direct neighbourhood of the A-1 --- G+1 junction.
+From there, a first mechanistic scenario was proposed \cite{bevilacqua_mechanistic_2003}: the dianionic scenario proposes that both G8 and A38 are directly involved, acting respectively as the general base that activates the nucleophile O2' by capturing its proton, and as the general acid that reprotonates the leaving group O5' after the elimination step (see Figure \ref{fig:all_mecas} A) \cite{bevilacqua_mechanistic_2003}.
+Despite supporting pH-dependency experiments \cite{wilson_nucleobase_2006, kath-schorr_general_2012} and matching transition state arrangements \cite{rupert_transition_2002}, this cleavage scenario suffers from one major inconsistency, which is the necessary prior deprotonation but \textit{in vivo} impracticality of the N1 atom of the G8 nucleobase \cite{cottrell_ph_2011}.
 
 \begin{figure}[h]
   \centering
@@ -877,6 +877,8 @@ The linker was kept in the simulation.
 
 \begin{figure}[h!]
     \centering
+
+
     \includegraphics[width=0.4\textwidth]{figures_SI/pairs.png}
     \caption[Base Pairing in Ligated and Cleaved States for the Monoanionic Scenario]
     {Proportion of the trajectory in which helices H1 and H2 base pairs 
@@ -885,6 +887,21 @@ The linker was kept in the simulation.
     The secondary structure is schemed for easing the reading. 
     The scissible phosphate is represented by a black lightning bolt.}
     \label{fig:ccH_prod_basepair}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures_SI/SI_convergence_chap3.png}
+    % \caption[Estimating the Convergence of Intermediate Species \acrshort{REST2} simulations]
+    % {Local and global observables of the unscaled replica used to determine convergence for four REST2 simulations of hairpin ribozyme ligated states, 
+    % and only the global observables for two REST2 simulation of cleaved states, investigated in this chapter.
+    % (A-D) The left panel shows the evolution of the catalytic site, with the evolution of the proportion of the populations in the different catalytic site arrangements, 
+    % L$_\mathrm{C}$, L$_\mathrm{1}$ and L$_\mathrm{2}$, along time, in the lowest replica trajectory. 
+    % See the Methods section of Chapter \ref{chap:minimal} for conformational labeling criteria. 
+    % (A-D) right panel and (F), (G) show the evolution in time of the structure eRMSD \cite{bottaro_role_2014} 
+    % relative to each respective initial structure.}
+    %\label{fig:Int_REST2_Convergence}
 \end{figure}
 
 % \begin{table}
