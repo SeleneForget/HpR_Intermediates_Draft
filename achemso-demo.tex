@@ -131,8 +131,10 @@ with ongoing debates regarding how these catalysts facilitate their reactions.
 \selrev{Ettoffer un peu ici. Peut être faire un petit inventaire de ce que l'on connait des autres ryb ?}
 
 
-Among the most studied ribozymes, the hairpin ribozyme (HpR) stands out for its ability to cleave a phosphodiester bond within its own backbone, replacing a 3'-5' polymeric linkage with a 2'-3' cyclic terminating linkage \cite{fedor_structure_2000,muller_many_2012}.
-Although HpR is not the only self-reactive ribozyme, it is one of the few capable of catalyzing this reaction without the requirement for divalent metal ions \cite{chowrira_extensive_1992, hampel_unique_1997, nesbitt_unusual_1997, young_metal_1997, nesbitt_internal_1999}.
+Among the most studied ribozymes, the hairpin ribozyme (HpR) stands out for its ability to cleave a phosphodiester bond 
+within its own backbone, replacing a 3'-5' polymeric linkage with a 2'-3' cyclic terminating linkage~\cite{fedor_structure_2000,muller_many_2012}.
+Although HpR is not the only self-reactive ribozyme, it is one of the few capable of catalyzing this reaction 
+without the requirement for divalent metal ions~\cite{chowrira_extensive_1992, hampel_unique_1997, nesbitt_unusual_1997, young_metal_1997, nesbitt_internal_1999}.
 % Enjeu globau : mais commentles ARNs s'y prennent ils ? Prendre un example d'itérêt : sans ion, reaction de self-cleavage du HpR.
 % Pourquoi est il difficile de trancher le débat ? Object auto reactif difficile à étudier expérimentalement
 %% Du coup on peut faire de la simulation a partir des structures dont l'ont dispose mais pas facile de tracnher le débat car objet très flexibles
@@ -158,9 +160,17 @@ Building from there, two key questions arise:
 \end{figure}
 
 
-Mutagenesis experiments \cite{kuzmin_role_2005}, reinforced by structural resolution studies \cite{rupert_crystal_2001,salter_water_2006,spitale_identification_2009,macelrevey_structural_2008}, have demonstrated that two surrounding nucleobases, G8 and A38, are mandatory for the chemical activity and are in the direct neighbourhood of the A-1 --- G+1 junction.
-From there, a first mechanistic scenario was proposed \cite{bevilacqua_mechanistic_2003}: the dianionic scenario proposes that both G8 and A38 are directly involved, acting respectively as the general base that activates the nucleophile O2' by capturing its proton, and as the general acid that reprotonates the leaving group O5' after the elimination step (see Figure \ref{fig:all_mecas} A) \cite{bevilacqua_mechanistic_2003}.
-Despite supporting pH-dependency experiments \cite{wilson_nucleobase_2006, kath-schorr_general_2012} and matching transition state arrangements \cite{rupert_transition_2002}, this cleavage scenario suffers from one major inconsistency, which is the necessary prior deprotonation but \textit{in vivo} impracticality of the N1 atom of the G8 nucleobase \cite{cottrell_ph_2011}.
+Mutagenesis experiments~\cite{kuzmin_role_2005}, 
+reinforced by structural resolution studies~\cite{rupert_crystal_2001,salter_water_2006,spitale_identification_2009,macelrevey_structural_2008}, 
+have demonstrated that two surrounding nucleobases, G8 and A38, are mandatory for the chemical activity and are in the direct neighbourhood of the A-1 --- G+1 junction.
+From there, a first mechanistic scenario was proposed~\cite{bevilacqua_mechanistic_2003}: 
+the dianionic scenario proposes that both G8 and A38 are directly involved, 
+acting respectively as the general base that activates the nucleophile O2' by capturing its proton, 
+and as the general acid that reprotonates the leaving group O5' after the elimination step (see Figure \ref{fig:all_mecas} A)~\cite{bevilacqua_mechanistic_2003}.
+Despite supporting pH-dependency experiments~\cite{wilson_nucleobase_2006, kath-schorr_general_2012} 
+and matching transition state arrangements~\cite{rupert_transition_2002}, 
+this cleavage scenario suffers from one major inconsistency, 
+which is the necessary prior deprotonation but \textit{in vivo} impracticality of the N1 atom of the G8 nucleobase~\cite{cottrell_ph_2011}.
 
 \begin{figure}[h]
   \centering
@@ -183,50 +193,53 @@ While being maintained in position,
 the deprotonation of the O2' atom of A-1 is performed by one of the non-bridging oxygens the phosphate group itself, 
 leading to a monoprotic phosphate intermediate. 
 However, this scenario also suffers from its apparent incompatibility with the experimental pH-dependency of the reaction, 
-as argued by Kath-Schorr et al. \cite{kath-schorr_general_2012}.
+as argued by Kath-Schorr et al.~\cite{kath-schorr_general_2012}.
 
 All this debate remains unsettled so far because of the inherent self-reactiveness of the HpR. 
 Indeed, because it is self-reactive, the hairpin ribozyme can not be structurally resolved in directly as such.
 Instead, mimics of the HpR in wich the chemical activity is inhibited, etiher by removing the O2' oxygen nuclophilr, by methylating it
-or by replacing other chemical groups with non-reactive ones, are used to study the catalytic site \cite{rupert_crystal_2001,salter_water_2006}.
+or by replacing other chemical groups with non-reactive ones, are used to study the catalytic site~\cite{rupert_crystal_2001,salter_water_2006}.
 Thus, no one can directly observe the catalytic site in its reactive form.
 With arguments based on crystal structures of \textit{mimics} of the catalytic states,
 and non-discriminative pH profiles, it has been hard to draw definitive conclusions from experiments only.
 
 In parallel to the experimental efforts, the HpR has been studied using \textit{in silico} tools.
-Complementary to X-ray crystal studies, molecular dynamics (MD) expands the knowledge gained through structural resolution
+Complementary to the X-ray crystal studies, molecular dynamics (MD) expands the knowledge gained through structural resolution
 by providing the dynamic behavior of the resolved object. 
-Here, the challenge of studying self-reactive objects is no longer a problem,
+Even better, the challenge of studying self-reactive objects is no longer a problem,
 as one can simulate any reactive species without worrying about self-degradation. 
 %Thus, one can have  the dynamic and chemical behavior of the true self-reactive HpR, without any chemical modification.
-Computational studies of the HpR are of two sorts. First, extended simulation of the full HpR with classical force fields \cite{mlynsky_extensive_2010, mlynsky_reactive_2015,kumar_mechanistic_2018}, 
+Computational studies of the HpR are of two sorts. 
+First, extended simulation of the full HpR with classical force fields~\cite{mlynsky_extensive_2010, mlynsky_reactive_2015,kumar_mechanistic_2018}, 
 which alow for the exploration of the conformational landscape of the HpR\cite{mlynsky_extensive_2010, mlynsky_reactive_2015,kumar_mechanistic_2018}.
 Second, combined quantic and classic mechanics (QM/MM) simulations 
 \cite{mlynsky_comparison_2014, mlynsky_qmmm_2011, nam_electrostatic_2008, nam_electrostatic_2008, kumar_deciphering_2020},
 which investigate the chemical activity of the catalytic site by simulating the chemical steps of the reaction.
 These two investigations means are usually conducted sequentially, 
-as QM/MM simulation require relevant pre-catalytic initial structures which can only be obtained from prior robust classical MD simulations.
+as QM/MM simulation require relevant pre-catalytic initial structures 
+which can only be obtained from prior robust classical MD simulations.
 
-The contributions of the classical MD studies can be classified into two opposing pitches.
+The classical MD studies are to be classified into two opposing pitches.
 The first base iself on study of the catalytic site 
 which has been explicitly constrained the catalytic site elements to ensure the formation of a specific H-bond 
-network which are coherent wiht the general dianionic scenario: G8:N1···A-1:O2’, A38:N1···G+1:O5’, G8:N2···G+1:Opro-Rp, and A38:N6···G+1:Opro-Rp \cite{mlynsky_reactive_2015,veenis_investigation_2021}.
+network, coherently with the general dianionic scenario: G8:N1···A-1:O2’, A38:N1···G+1:O5’, G8:N2···G+1:Opro-Rp, and A38:N6···G+1:Opro-Rp~\cite{mlynsky_reactive_2015,veenis_investigation_2021}.
 Although a certain stability of this local conformation was evaluated within 500~ns of simulation,
-we proved i our previous work that the stability of this local arrangement, which we labeled L$_\mathrm{1}$, 
-does not hold true over extensive sampling \cite{forget2024simulation}.
+we proved in our previous work that the stability of this local arrangement, which we labeled L$_\mathrm{1}$, 
+does not hold true over extensive sampling~\cite{forget2024simulation}.
 In fact, we rather found that another local arrangement, 
-L$_\mathrm{2}$, is the true stable conformation of the hairpin ribozyme in its pre-calaytic state.
+L$_\mathrm{2}$, is rather the stable conformation of the hairpin ribozyme in its pre-calaytic state.
 These observations are in line with the second pitch which stipulates that this L$_\mathrm{2}$ arrangement,
-in which G8 is protonated and distinct from O2' and O2' involved in a H-bond with the non-brdiging pro-Rp oxygen, could be the departure point of the in-line monoanionic scenario. 
+in which G8 is protonated and distinct from O2' and O2' is involved in a H-bond with the non-brdiging pro-Rp oxygen, 
+could be the departure point of the in-line monoanionic scenario. 
 Kumar et al. explored the conformational landscape of the catalytic site ounce the O2' proton has been transfered to Opro-Rp, 
 and showed that the catalytic site followingly arranges itself perfectly for the upcoming addition-elimination steps,
-with the O2'-P-O5' inline attack angle IAA flatter than 140° \cite{kumar_mechanistic_2018}.
-\selrev{Il manque la référence a d'autres articles ou ces états intermédiaires on été étudiés comme \cite{}}
+with the O2'-P-O5' inline attack angle IAA flatter than 140°~\cite{kumar_mechanistic_2018}.
+\selrev{Il manque la référence a d'autres articles ou ces états intermédiaires on été étudiés comme~\cite{}}
 
 % This aimed conformation was guided by chemical intuition on the site itself descriptions 
 % of the catalytic site arrangement have emerged. 
 % The general acid-base mechanism and its specific
-% requirements for the arrangement of the catalytic site. Veenis et al. \cite{veenis_investigation_2021} and Mlynsky et al. \cite{mlynsky_reactive_2015}.
+% requirements for the arrangement of the catalytic site. Veenis et al.~\cite{veenis_investigation_2021} and Mlynsky et al.~\cite{mlynsky_reactive_2015}.
 % Our recent efforts to verify the convergence of the catalytic site conformational landscape%
 % focus on the positions of G8:N1 relative to O2’ and A38:N1 relative to O5’. 
 % or by analogy with artificial mimics of transition state structures [187] However, they do
@@ -248,10 +261,13 @@ and the limited conformational sampling of QM/MM simulations.
 
 % Résultats partiels. 
 %Inspired by the approach of Kumar et al. who simulated the monoprotic inline scenario intermediate, protonated on the O-pro-Rp oxygen,
-In this study, we propose to complement the arsenal of \textit{in sillico} studies which have conducted on the HpR and to explore the conformational landscape of the different intermediates of the two opposed scenarios within a comparative study,
-and using state of the art extensive sampling techniques, Replica Exchange with Solute Tempering or REST2, which have proven to be essential in the study of systems as flexible as the HpR \cite{forget2024simulation}. 
-This will lead us to yet so far undone simulation of the pro-Sp monoprotic HpR, and several cleaved states of the HpR.
-With this, we provide valuable insights into the mechanistic debate, by addressing the feasibility of the mechanistic steps at each stage of the reaction.
+In this study, we propose to complement the arsenal of \textit{in sillico} studies 
+which have conducted on the HpR. 
+We explore the conformational landscape of the different intermediates of the two opposed scenarios within a comparative study
+using state of the art extensive sampling techniques, Replica Exchange with Solute Tempering or REST2, which have proven to be essential in the study of systems as flexible as the HpR~\cite{forget2024simulation}. 
+This leads us to generate unprecedented simulations of the pro-Sp monoprotic HpR, and several cleaved states of the HpR.
+With this, we provide valuable insights into the mechanistic debate, 
+by addressing the feasibility of the mechanistic steps at each stage of the reaction.
 Additionally, these unprecedented simulations provide relevant equilibrated structures along the different mechanistic routes,
 an sampling effort which will be useful, if not mandatory, for subsequent quantum calculations.
 
@@ -274,52 +290,54 @@ making it impossible for the nucleophilic attack to occur.
 \subsection{Simulation parameters and Analysis Softwares}
 
 The different simulations of the hairpin ribozyme intermediates were performed 
-using the GROMACS 2022.3 \cite{abraham_gromacs_2015} patched with PLUMED 2.7 \cite{tribello_plumed_2014, the_plumed_consortium_promoting_2019}.
+using the GROMACS 2022.3~\cite{abraham_gromacs_2015} patched with PLUMED 2.7~\cite{tribello_plumed_2014, the_plumed_consortium_promoting_2019}.
 The visualization and analysis of the REST2 trajectories were performed 
 using respectively the VMD software, wiht the latest COLVAR extension,
 and several home-made scripts (avaibale on the Github repository of the group) which require both the MDAnalysis and the Baranaba Python libraries.
 
 
 \paragraph{Forcefields.}
-Coherenlty to the conclusions drawn in our previous work \cite{forget2024simulation}, 
-we parametrize all our systems with the Amber14$\_$ff99bsc0\-$\chi_\mathrm{OL3}\epsilon \zeta_\mathrm{OL1}$ force field \cite{zgarbova_toward_2013}.
+Coherenlty to the conclusions drawn in our previous work~\cite{forget2024simulation}, 
+we parametrize all our systems with the Amber14$\_$ff99bsc0\-$\chi_\mathrm{OL3}\epsilon \zeta_\mathrm{OL1}$ force field~\cite{zgarbova_toward_2013}.
 This force fields does not include the parameters for certain nucleobases present in the HpR intermediates studied in this study 
 and had to be specifically added. 
 The parameters of A38 N1 protonated adenine, the joined adenine and guanine forming the monoprotic phosphate protonated on its Opro-Rp (GAA) 
-and deprotonated on the adenine O2'(RAA)  were extracted from the litterature\cite{forget2024simulation} and adapted to the forcefield manually.
-The parameters for the monoprotic phosphate group with the proton on the pro-Sp atom (labeled RSA + GSA) were adapted from these very RAA and GAA parameters by simply inverting the charge of pro-Rp and pro-Sp oxygens, without modifying the rest of the redistribution.
+and deprotonated on the adenine O2'(RAA) were extracted from the litterature\cite{forget2024simulation} and adapted to the forcefield manually.
+The parameters for the monoprotic phosphate group with the proton on the Opro-Sp atom (labeled RSA + GSA) were adapted from these very RAA and GAA parameters by simply inverting the charge of pro-Rp and pro-Sp oxygens, without modifying the rest of the redistribution.
 Both the O2' deprotonated A-1 used in the dianionic scenario (AD) 
 and the 2',3'-cyclic phosphate adenine used in the two cleaved states (RAC)
-were generated using Gaussian \cite{g16} and Ambertools \cite{case_ambertools_2023} softwares
+were generated using Gaussian~\cite{g16} and Ambertools~\cite{case_ambertools_2023} softwares
 to obtain the charge redistribution and generate appropriate new atom types. All parameters can be found in the supporting information.
 
 
 
 \paragraph{Initial configurations.}
-We chose to initiate the simulations of the ligated dianionic scenario intermediates from the crystallographic structure of the pre-catalytic state of the minimal HpR (PDB ID: 2OUE) \cite{rupert_crystal_2001},
+We chose to initiate the simulations of the ligated dianionic scenario intermediates 
+from the crystallographic structure of the pre-catalytic state of the minimal HpR (PDB ID: 2OUE)~\cite{rupert_crystal_2001},
 with methyl group present on the O2' atom of A-1 was manually removed, 
-coherently with what we for the simuluation of the inline monoaionic pre-catalytic state revious work \cite{forget2024simulation}.
-The pro-Rp monoprotic intermediate HpR simulation was initiated from a L2 conformation 
+coherently with what we for the simuluation of the inline monoaionic pre-catalytic state revious work~\cite{forget2024simulation}.
+The pro-Rp monoprotic intermediate HpR simulation was initiated from a L$_\mathrm{2}$ conformation 
 (see the descriptors section for details about the conformational labelling) 
 extracted from this very pre-catalytic state simulation.
 As initial structure for the pro-Sp intermediates, 
-we used a L$_\mathrm{1}^{pucker}$ frame from the trajectory provided by Mlynsky et al. (see our previous work for conformational labelling \cite{forget2024simulation} for more details on this simulation).
+we used a L$_\mathrm{1}^{pucker}$ frame from the trajectory provided by Mlynsky et al. (see our previous work\cite{forget2024simulation} and Mlynsky et al. work\cite{mlynsky_reactive_2015} for more details on this simulation).
 
 The initial structures of all the cleaved states investigated in this study were constructed
-from the crystallographic structure of the 61-mer minimal hairpin ribozyme resolved at 2.2 \AA,
-in which the G+1 phosphate group was removed (PDB ID: 2P7D) \cite{torelli_comparison_2007}.
+from the crystallographic structure of the 61-mer minimal hairpin ribozyme resolved at 2.2~\AA,
+in which the G+1 phosphate group was removed (PDB ID: 2P7D)~\cite{torelli_comparison_2007}.
 The missing phosphate (P, Opro-Rp, Opro-Sp atoms) was positioned according to the Vanadate Structure (PDB ID: 2P7E).
 After superposing the respective A-1 nucleotides, 
 the Cartesian coordinates of the vanadate were extracted to be used for the phosphorus atom, 
 and the same goes for the oxygen atoms.\\
 Additionally, a conformational heterogeneity at nucleobase G8 in the cleaved product mimic crystal structure was observed, 
-with 50\% of the population with G8 in the syn conformation, 50\% in the anti conformation \cite{torelli_comparison_2007}.
+with 50~\% of the population with G8 in the syn conformation, 50~\% in the anti conformation~\cite{torelli_comparison_2007}.
 Both conformations were reported in the crystal structure. 
 We chose to keep the anti conformer, as this is the conformation of the ligated structure, 
 the most populated conformer of the vanadate transition state mimic (PDB ID: 2P7E), 
 and the one that was resolved in the pre-catalytic state (PDB ID: 2OUE) and in the product state of the 4WJ ribozyme (PDB ID: 1M5K).
-The positions of the final catalytic site atoms (in the crystal structure) were compared to the only other cleaved HpR which has been resolved, which differs in sequence and size while conserving the same satalytic core (PDB ID: 1M5V)
-We demonstrate excellent consistency, with an RMSD of 0.93~\AA\ calculated over all heavy atoms of residues A-1, G+1, G8 and A38 (see Figure \ref{fig:cleaved_crystals}).
+The positions of the final catalytic site atoms (in the crystal structure) were compared to the only other cleaved HpR which has been resolved, 
+which differs in sequence and size while conserving the same satalytic core (PDB ID: 1M5V)
+We demonstrate sufficent consistency, with an RMSD of 0.93~\AA\ calculated over all heavy atoms of residues A-1, G+1, G8 and A38 (see Figure \ref{fig:cleaved_crystals}).
 
 % We chose not to use a L$_\mathrm{1}^{HB}$ structure as the relative stability of the L$_\mathrm{1}$ conformation in this structure remains incompletely understood 
 %(see Discussions of the previous chapter)
@@ -333,27 +351,28 @@ We demonstrate excellent consistency, with an RMSD of 0.93~\AA\ calculated over 
 \paragraph{System set up, equilibration and production.}
 All HpR were solvated in TIP3P water using Gromacs {\fontfamily{qcr}\selectfont solvate} command. 
 Crystallographic waters were kept, while crytalographic ions were replaced by a 0.2M slution of KCl,  
-and all solvated ribozymes underwent minimization, equilibration, and production runs within the same process as described in our previous work \cite{forget2024simulation}.
-Shortly, the solvent was progressively equilibrated with a 5000 step energy minization, a 500~ps NVT and a NPT equilibration at $\mathrm{T}= 298.15$~K 
+and all solvated ribozymes underwent minimization, equilibration, and production runs within the same process as described in our previous work~\cite{forget2024simulation}.
+In a nutshell, the solvent was progressively equilibrated with a 5000 step energy minization, a 500~ps NVT and a NPT equilibration at $\mathrm{T}= 298.15$~K 
 and $P=1$~bar, all while maintaning the solute with 1000 kJ/ml/nm² positional restraints on the nucleic backbone.
 The backbone is gradually loosened during three successive relaxations with decreasing constraint forces, from 1000 to 100 to 10 kJ/mol/nm$^2$.
 Finally, the complete system is freely simulated for 100 ps in NVT and 100 ps in NPT terms. 
-The particle-mesh Ewald method \cite{darden_particle_1993} is used to calculate the electrostatic interactions, and a Verlet cutoff scheme of 10.0 Å is used for Lennard-Jones interactions. 
+The particle-mesh Ewald method~\cite{darden_particle_1993} is used to calculate the electrostatic interactions, and a Verlet cutoff scheme of 10.0 Å is used for Lennard-Jones interactions. 
 Cubic interpolation is used to set the grid size at 0.12~nm.
-All bonds with hydrogen atoms are subjected to the LINCS algorithm \cite{hess_lincs_1997}, and the simulation timestep was always set at 2~ps. 
-The production might then start from there. Gromacs 2022.3 \cite{abraham_gromacs_2015} patched with PLUMED 2.7 \cite{tribello_plumed_2014, the_plumed_consortium_promoting_2019} was used for all simulations and some system preparation. 
+All bonds with hydrogen atoms are subjected to the LINCS algorithm~\cite{hess_lincs_1997}, and the simulation timestep is of 2~ps. 
+Gromacs 2022.3~\cite{abraham_gromacs_2015} patched with PLUMED 2.7~\cite{tribello_plumed_2014, the_plumed_consortium_promoting_2019} was used for all simulations and some system preparation. 
 
 \paragraph{Replica Exchange with Solute Tempering (REST2) setup.}
 All HpR simulations were performed using replica exchange with solute tempering (REST2)\cite{liu_replica_2005, wang_replica_2015},
-with the same parameters as the ones used in our previous work \cite{forget2024simulation}:
+with the same parameters as the ones used in our previous work~\cite{forget2024simulation}:
 We employed 24 replicas with rescaling factors ~ ranging from 1 to 0.667, trying exchanges every 1 ps, at 300 K.
-The simuations typically lasted for 500~ns, and displayed a average exchange rate of 15---20$\%$.  
+The simuations typically lasted for 500~ns, and displayed a average exchange rate of 13---20$\%$.  
 
 \subsection{Descriptors.}
 
-We adpoted the same conformational labelling as in our previous work \cite{forget2024simulation} in order to 
+We adpoted the same conformational labelling as in our previous work~\cite{forget2024simulation} in order to 
 caracterize the arrangements of the catalytic site in its ligated state.
-This labelling system is entirely based on the combination of observables implying the catalytic site atoms, and distiguish three main conformations.
+This labelling system is entirely based on the combination of observables implying the catalytic site atoms, 
+and distiguish three main conformations.
 In L$_\mathrm{1}$, the A-1 residue is in the C2'-endo puckering pseudo-rotation angle,
 the O2' atom is involved in a H-bond with G8:N1, 
 and the phosphate is orientated such as the O2' is clother to the pro-Sp than the pro-Rp oxygen.
@@ -388,9 +407,8 @@ Finally, all frames which do not meet these different conditions are classified 
 The convergence of the simulations of all ligated itermediates was assessed both at the global scale (using the eRMSD quantity as defined in the litterature)
 and at the local scale, using the ratio of frames that fall under the different conformational categories defined above in each time block. 
 Figure \ref{fig:Int_REST2_Convergence} A-D details the time evolution of these metrics for the ligated states.
-The convergence of cleaved states was assessed using only the eRMSD global metric only, as  we did not settle any satisfying local collective variable (see Figure\ref{fig:Int_REST2_Convergence} E-F).
-
-
+The convergence of cleaved states was assessed using only the eRMSD global metric\cite{bottaro_role_2014} only, 
+as  we did not settle any satisfying local collective variable (see Figure\ref{fig:Int_REST2_Convergence} E-F).
 
 
 %\subsection{Simulation of Product States.}
@@ -403,13 +421,13 @@ The convergence of cleaved states was assessed using only the eRMSD global metri
 The notion of "intermediate" comonly used in this study should not be confused with the notion of chemical intermediate state. 
 Here, we only consider the different protonation states of the catalytic site which may appear along the different mechanistic pathways,
 without any claim on their stability or relevance. 
-Deprived of this knowledge, we choose here to consider accordingly every species that could appear along the different mechanistic pathways,s
-starting with description of certain of the in-line mono-anionic scenario states and ending with those of the general dianionic scenario.
+Deprived of this knowledge, we choose here to consider accordingly every species that could appear along the different mechanistic pathways,
+starting with description of certain of the in-line mono-anionic scenario protonation states and ending with those of the general dianionic scenario.
 
 \subsection{Mono-Anionic Scenario}
 
 The mono-anionic mechanism begins with a proton transfer from the O2' to one of the two oxygens of the scissile phosphate,
-leading to the formation of the "AP" intermediate (see Figure \ref{fig:monoanionic_general}).
+leading to the formation of the "AP" intermediate (see Figure \ref{fig:monoanionic_general} B).
 From there, the deprotonated O2' oxygen attacks the phosphorus atom, forming a pentavalent phosphorus transition state.
 The system subsequently proceed an elimination step, with the capture of the proton on the phosphorus oxygen and the departure of the substrate group.
 
@@ -419,22 +437,26 @@ The system subsequently proceed an elimination step, with the capture of the pro
 % The same proton is captured back by the adenosine in a following double proton transfer, with 
 % O5' accepting the proton from the phosphate oxygen and releases its own proton back to A38.
 % We underline that this 'sub-version' of the inline mono-anionic mechanism 
-% involves chemically A38 in the cleavage reaction \cite{mlynsky_extensive_2010}, coherently with the reaction dependence on the presence of this residue.
+% involves chemically A38 in the cleavage reaction~\cite{mlynsky_extensive_2010}, coherently with the reaction dependence on the presence of this residue.
 % The detail of this last step is another cornerstone of the debate. 
 
 The mono-anionic mechanism has two prospects, namely the pro-Sp (O1P) and the pro-Rp (O2P) pathways.
 Although they are appearing symmetrical on paper, these two pathways are not equivalent in terms of local arrangements and energy.
 Indeed, they imply different H-bond acceptors for HO2', 
 meaning that they are initiated from conformations of the catalytic site which probably diverge in stability. 
+In other words, which sub-scenario is to be adpoted can be deduced from the H-bond network undertaken by the catalytic site:
+should O2' be involved in an H-bond with O-proRp, the proton transfer would be done over this very non-bridging oxygen and the AP intermediate would correspond to a protonated O-proRp specie.
+Likewise, if O2' is rather facing O-proSp, the folowing mono-anionic scenario will likely present a protonated O-proSp. 
+Consequently, our first point of interest will be: prior to this first proton transfer, which non bridging oxygen is involed in a H-bond with O2' ? 
 
-In our previous study \cite{forget2024simulation}, we have shown how the exploration of the conformational landscape of the pre-catalytic state of the HpR,
-with A38 protonated on its N1 atom, reveals
+% In our previous study~\cite{forget2024simulation}, we have shown how the exploration of the conformational landscape of the pre-catalytic state of the HpR,
+% with A38 protonated on its N1 atom, reveals
 
 
 
 
-we have shown that the pre-catalytic state of the HpR is arranged in a L$_\mathrm{1}$ conformation,
-We explored accordingly the conformational landscape of both protonated intermediates. 
+% we have shown that the pre-catalytic state of the HpR is arranged in a L$_\mathrm{1}$ conformation,
+% We explored accordingly the conformational landscape of both protonated intermediates. 
 % Not sure this should arrive here.
 
 % Concretely, the pro-Sp pathway originates from a conformation in which O-proSp is involved in a H-bon wiht O2', 
@@ -446,16 +468,19 @@ We explored accordingly the conformational landscape of both protonated intermed
 
 
 \paragraph{Pre-catalytic state.}
-% Est-ce que 'lon fait un paragraphe sur ça ? 
-This matter has already been adressed in our previous study \cite{forget} in which we sampled the conformational landscape ofthe pre-catalytic HpR.
-We have shown ...,  
-Here again, the question of the relative stability of the L$_\mathrm{2}$ conformation compared to L$_\mathrm{1}$ 
-or to the L$_\mathrm{C}$ arrangements proves to be central to this debate. Without any undoubtful arguments,
+% Est-ce que 'lon fait un paragraphe sur ça ?
+The exploraiton of the conformational landscape of the pre-catalytic HpR has been the subject of a previous study~\cite{forget2024simulation}.
+From this latter, we can believe that the pre-catalytic site arranges in two major conformation, L$_\mathrm{2}$ and L$_\mathrm{1}$,
+which diverge H-bondly speaking. 
+L$_\mathrm{2}$, stable, involves a A-1:O2'···G+1:Opro-Rp H-bond, 
+while L$_\mathrm{1}$, metastable, involves a A-1:O2'···G+1:Opro-Sp H-bond.  
+Thus, the identificatin of the most favorable inline mono-anionic sub-sceanrio 
+raises again the question of the relative stability of the L$_\mathrm{2}$ conformation compared to L$_\mathrm{1}$ 
+or to the L$_\mathrm{C}$.
+We thoroughly discussed central debate, saying that ... 
+Without any undoubtful arguments,
 we choose to considere both pro-Sp and pro-Rp accordingly, leaving to te side the remaining question of the instability of the L$_\mathrm{1}$ conformation.
 
-%Along this mechanism, several protonation states of the catalytic site emerge. We will abusively call them intermediate although we have no evidence that these species correspond to local minima and show any metastablity.
-
-%% ISSINF Here figure of O1P- O2' vs O2P-2' in pre-cat
 
 \paragraph{AP intermediates. }
 
@@ -463,26 +488,27 @@ we choose to considere both pro-Sp and pro-Rp accordingly, leaving to te side th
 Starting with the pro-Sp pathway, we sampled the HpR structure in which A-1:O2' is deprotonated, 
 and the pro-Sp oxygen of the scissile phosphate is protonated (see Figure \ref{fig:ProSp_int}).
 
-Ounce HO2' has been transferred to the pro-Sp oxygen, the nucleophilic O2' is poised to attack through its lone electron pair.
+Once HO2' has been transferred to the pro-Sp oxygen, the nucleophilic O2' is poised to attack through its lone electron pair.
 The key observables are the inline attack angle (IAA) and d$_\mathrm{O2^{\prime}-P}$, 
 which we represented in a 2D distribution plot in Figure \ref{fig:2D_int_monoanionic} A, right.
+
 The observation is unequivocal: the catalytic site is arranged perfectly for the nucleophilic attack, 
 with more than 73~\% of the frames in the \textit{reactive} region (IAA > 140° and d$_\mathrm{O2^{\prime}-P}$ < 3.5~\AA).
-%The HO2' is strongly held by the pro-Sp oxygen, with 100\% of the frames displaying the H-bond A-1:O2'···G+1:Opro-Sp.
+The HO2' is strongly held by the pro-Sp oxygen, with 100\% of the frames displaying the H-bond A-1:O2'···G+1:Opro-Sp.
 On the other side of the scissile phosphate, A38 is properly positioned 
 and faces the leaving-group O5' oxygen, with 88$\%$ of the d$_\mathrm{O5^{\prime}-A38:N1}$ < 3.5~\AA.
-
 Additionally, the L$_\mathrm{1}$ is conserved if not reinforced, with 71.0~\% 
 of the frames in this conformation during the converged part of the simulation, the rest being unlabeled arrangements.
 This conclusion is detailed by the catalytic 9-key observables combination analysis 
 which reveals a clear dominance of the L$_\mathrm{1}$ conformation (see \ref{fig:2D_int_monoanionic} A, left, 
 and see Methods of Chapter \ref{chap:minimal} for more detail regarding this type of analysis).
 
-The combination groups which do not fall into the L$_\mathrm{1}$ criteria are very similar to it, 
-with only the puckering pseudo rotation angle of A-1 shifting away from its C2'-endo range.
-The  9-key observables combination analysis shows the clear domination of combination groups closely related 
-and highly, 
-with only 9.6\% representing rare combinations and more than four combination groups comprising $\geq$5\% of the population.
+%% Trop peu précis
+% The combination groups which do not fall into the L$_\mathrm{1}$ criteria are very similar to it, 
+% with only the puckering pseudo rotation angle of A-1 shifting away from its C2'-endo range.
+% The  9-key observables combination analysis shows the clear domination of combination groups closely related 
+% and highly, 
+% with only 9.6\% representing rare combinations and more than four combination groups comprising $\geq$5\% of the population.
 
 
 
@@ -501,15 +527,7 @@ with only 9.6\% representing rare combinations and more than four combination gr
     \label{fig:2D_int_monoanionic}
 \end{figure}
 
-Recent experiments have explored the importance of Watson-Crick G+1---C25 base pair,
-evaluating the evolution of kinetics and thermodynamics during G+1---C25 breaking \cite{cottrell_functional_2007}.
-A clear correlation emerged between internal equilibrium towards ligation 
-and the increasing number of hydrogen bonds formed between residues +1 and 25.
-These results suggest a dual role for the G+1-C25 base pair: not only does it stabilize interdomain interactions,
-but it also constrains the catalytic site to an optimal geometry.
-This is how the authors interpret the greater sensitivity of the ligation rate to G+1 and C25 mutations,
-as the precise alignment of the catalytic site should be even more crucial in the direction of ligation,
-when the 2',3'-cyclic phosphate and 5'-hydroxyl termini are covalently linked.\\
+
 
 %% pro-SP
 % Building on these observations, 
@@ -528,21 +546,34 @@ A local minimum, absent in the pre-catalytic state 2D distribution,
 emerged in the \textit{IAA}$\simeq $ 155° and d$_\mathrm{O2^{\prime}-P}$ $\simeq$ 3.25\AA\ region.
 These frames are ideally arranged for the nucleophilic attack and represent 35.1~\% of the converged REST2 simulation.
 
-Additionally, this region features the rare presence of the L$_\mathrm{C}$ conformation, 
-with ~3.5\% of the $IAA\geq $140° frames adopting this arrangement.
-This caught our attention, as in L$_\mathrm{C}$, the A-1 ribose is in a C2'-endo pucker.
-This specific puckering angle has been at the center of the discussion of the pre-catalytic state conformational space (Chapter \ref{chap:minimal}).
-On one hand, most of the crystal structures of the HpR pre-catalytic state display A-1 in C2'-endo.
-On the other, in all trajectories initiated from the crystal structure, A-1 pucker irrevocably flips from C2'-endo to C3'-endo.
-Thus, we were intrigued by the presence of the L$_\mathrm{C}$ conformation in the pro-Rp intermediate at converged times.
-When looking closer into the time block analysis of the conformational labeling, we observed a neat diminution of the L$_\mathrm{C}$ conformation.
-Thus, the few frames classified as L$_\mathrm{C}$ could be a remnant of the initial conformation, and their eventual disappearance is probable (see Appendices).
+%% Pas pertinent ici ?
+% Additionally, this region features the rare presence of the L$_\mathrm{C}$ conformation, 
+% with ~3.5\% of the $IAA\geq $140° frames adopting this arrangement.
+% This caught our attention, as in L$_\mathrm{C}$, the A-1 ribose is in a C2'-endo pucker.
+% This specific puckering angle has been at the center of the discussion of the pre-catalytic state conformational space (Chapter \ref{chap:minimal}).
+% On one hand, most of the crystal structures of the HpR pre-catalytic state display A-1 in C2'-endo.
+% On the other, the caractiscal C2'-endo puckering conformation of A-1 has been argued to be induced by the anealing metylation modification of this nucleotide,
+% with A-1 pucker irrevocably flips from C2'-endo to C3'-endo when unmethylated (see our preivous work ...).
+
+% Thus, we were intrigued by the presence of the L$_\mathrm{C}$ conformation in the pro-Rp intermediate at converged times.
+% When looking closer into the time block analysis of the conformational labeling, 
+% we observed a neat diminution of the L$_\mathrm{C}$ conformation.
+% Thus, the few frames classified as L$_\mathrm{C}$ could be a remnant of the initial conformation, 
+% and their eventual disappearance is probable (see Appendices).
+
+%% Ca va ou ça ??
+Recent experiments have explored the importance of Watson-Crick G+1---C25 base pair,
+evaluating the evolution of kinetics and thermodynamics during G+1---C25 breaking~\cite{cottrell_functional_2007}.
+A clear correlation emerged between internal equilibrium towards ligation 
+and the increasing number of hydrogen bonds formed between residues +1 and 25.
+These results suggest a dual role for the G+1-C25 base pair: not only does it stabilize interdomain interactions,
+but it also constrains the catalytic site to an optimal geometry.
+This is how the authors interpret the greater sensitivity of the ligation rate to G+1 and C25 mutations,
+as the precise alignment of the catalytic site should be even more crucial in the direction of ligation,
+when the 2',3'-cyclic phosphate and 5'-hydroxyl termini are covalently linked.\\
 
 
 \paragraph{Cleaved State}
-
-
-
 
 \subsection{Dianionic Scenario}
 % Question : est-ce qu'on le laisse en main ? C'était assez exploratoire 
@@ -565,7 +596,7 @@ Thus, the few frames classified as L$_\mathrm{C}$ could be a remnant of the init
 Our results contrast with some of the available experimental data.
 At the forefront of these experimental elements is the pKa of the phosphate oxygens,
 which, being around 1, could not easily accept a proton from a neutral A-1:O2'.
-We note that the pKa of the A-1:O2' atom was re-evaluated to be approximately 18.5 \cite{veenis_investigation_2021},
+We note that the pKa of the A-1:O2' atom was re-evaluated to be approximately 18.5~\cite{veenis_investigation_2021},
 making it highly unlikely for either G8 or the phosphate oxygens to capture it.
 Whether through the pro-Rp or the pro-Sp pathway, the monoanionic theoretical pH-profile
 should exhibit high activity at low pH and a sharp drop around pH 5.5.
@@ -573,7 +604,7 @@ Experimentally, however, we observe the opposite trend,
 and no alternative explanation has been proposed to support a monoanionic scenario.
 
 The dianionic scenario on the other hand, has been argued 
-as the compatible with the experimental pH rates \cite{kath-schorr_general_2012,wilson_hairpin_2011}. 
+as the compatible with the experimental pH rates~\cite{kath-schorr_general_2012,wilson_hairpin_2011}. 
 However remains the question of the deprotonation of G8 at \textit{in vivo} pHs. 
 If the G8:H1 proton was to be deprotonated on the fly, then by whom would it be captured? 
 And why would such a chemical specie not directly deprotonate the HO' itself? 
@@ -581,22 +612,22 @@ Our simulations did not show any evidence of unexpected chemical players,
 and left the question of the deprotonation of G8 unanswered.
 
 Encouragingly, other experimental findings do not directly contradict our monoanionic-favoring perspective.
-Notably, the crystallographic resolution of the HpR in its transition state analog \cite{torelli_comparison_2007}
+Notably, the crystallographic resolution of the HpR in its transition state analog~\cite{torelli_comparison_2007}
 aligns closely with the H-bond network described by the highly stable pro-Sp intermediate,
 featuring the G8:N2···G+1:Opro-Sp and G8:N1···A-1:O2' H-bonds.
 Our results are consistent with G8 and A38H$^+$ acting as stabilizing agents.
 Their key roles in terms of electronic stabilization 
-could explain the pH-dependence of the catalytic rate \cite{lebruska_rescue_2002, bevilacqua_mechanistic_2003, kuzmin_role_2004, nahas_observation_2004, wilson_nucleobase_2006, wilson_hairpin_2011} 
-and the sensitivity of the reaction to the mutations of these residues \cite{mlynsky_extensive_2010, mlynsky_reactive_2015}. 
+could explain the pH-dependence of the catalytic rate~\cite{lebruska_rescue_2002, bevilacqua_mechanistic_2003, kuzmin_role_2004, nahas_observation_2004, wilson_nucleobase_2006, wilson_hairpin_2011} 
+and the sensitivity of the reaction to the mutations of these residues~\cite{mlynsky_extensive_2010, mlynsky_reactive_2015}. 
 They need not be directly involved in catalysis.
 
 It is interesting to note that the monoanionic scenario, 
 with phosphate-assisted proton transfers, 
 is actually reminiscent of the uncatalyzed mechanism in bulk water, 
-that was recently studied by some of our group using deep-neural network inter-atomic potentials in particular \cite{benayad_molecular_2022,benayad_molecular_2023}, 
-and by others before \cite{florian_phosphate_1998,duarte_resolving_2015}. 
+that was recently studied by some of our group using deep-neural network inter-atomic potentials in particular~\cite{benayad_molecular_2022,benayad_molecular_2023}, 
+and by others before~\cite{florian_phosphate_1998,duarte_resolving_2015}. 
 The role played by the ribozyme active site residues here would be to 
-provide an electrostatic environment minimizing the free-energy barriers of the reaction \cite{warshel_electrostatic_2006}, 
+provide an electrostatic environment minimizing the free-energy barriers of the reaction~\cite{warshel_electrostatic_2006}, 
 but this reaction would proceed though a very similar pathway as compared to the bulk.
 
 Our approach has fulfilled its goal, which was to provide a dynamic view at the atomistic level of the ribozyme,
@@ -619,7 +650,7 @@ The approach itself invites scrutiny: intermediate species, by definition, are i
 and understanding their equilibrium behavior does not necessarily yield meaningful insights into a mechanistic pathway,
 which is inherently of high energy.
 This critique is especially pertinent to dianionic intermediates,
-whose very existence is debated, as the mechanism is often considered concerted \cite{mlynsky_comparison_2014,mlynsky_qmmm_2011,nam_electrostatic_2008}.
+whose very existence is debated, as the mechanism is often considered concerted~\cite{mlynsky_comparison_2014,mlynsky_qmmm_2011,nam_electrostatic_2008}.
 In the end, distorted and unstable intermediates are both predictable and expected,
 offering little insight into the validity of this pathway.
 
@@ -673,13 +704,13 @@ The conformational landscapes of the different mecanstic intermediates examined 
 % the normal method; the citation should be placed before any
 % punctuation, as the class will move it if using a superscript
 % citation style
-% \cite{Mena2000,Abernethy2003,Friedman-Hill2003,EuropeanCommission2008}.
+%~\cite{Mena2000,Abernethy2003,Friedman-Hill2003,EuropeanCommission2008}.
 % The use of \textsf{natbib} allows the use of the various citation
-% commands of that package: \citeauthor{Abernethy2003} have shown
-% something, in \citeyear{Cotton1999}, or as given by
+% commands of that package:~\citeauthor{Abernethy2003} have shown
+% something, in~\citeyear{Cotton1999}, or as given by
 % Ref.~\citenum{Mena2000}.  Long lists of authors will be
 % automatically truncated in most article formats, but not in
-% supplementary information or reviews \cite{Pople2003}. If you
+% supplementary information or reviews~\cite{Pople2003}. If you
 % encounter problems with the citation macros, please check that
 % your copy of \textsf{natbib} is up to date. The demonstration
 % database file \texttt{achemso-demo.bib} shows how to complete
@@ -688,7 +719,7 @@ The conformational landscapes of the different mecanstic intermediates examined 
 
 % Multiple citations to be combined into a list can be given as
 % a single citation.  This uses the \textsf{mciteplus} package
-% \cite{Johnson1972,*Arduengo1992,*Eisenstein2005,*Arduengo1994}.
+%~\cite{Johnson1972,*Arduengo1992,*Eisenstein2005,*Arduengo1994}.
 % Citations other than the first of the list should be indicated
 % with a star. If the \textsf{mciteplus} package is not installed,
 % the standard bibliography tools will still work but starred
@@ -703,7 +734,7 @@ The conformational landscapes of the different mecanstic intermediates examined 
 % citations, the text should be placed before punctuation.  A note is
 % also generated if a citation has an optional note.  This assumes that
 % the whole work has already been cited: odd numbering will result if
-% this is not the case \cite[p.~1]{Cotton1999}.
+% this is not the case~\cite[p.~1]{Cotton1999}.
 
 % \subsection{Floats}
 
@@ -899,7 +930,7 @@ The linker was kept in the simulation.
     % (A-D) The left panel shows the evolution of the catalytic site, with the evolution of the proportion of the populations in the different catalytic site arrangements, 
     % L$_\mathrm{C}$, L$_\mathrm{1}$ and L$_\mathrm{2}$, along time, in the lowest replica trajectory. 
     % See the Methods section of Chapter \ref{chap:minimal} for conformational labeling criteria. 
-    % (A-D) right panel and (F), (G) show the evolution in time of the structure eRMSD \cite{bottaro_role_2014} 
+    % (A-D) right panel and (F), (G) show the evolution in time of the structure eRMSD~\cite{bottaro_role_2014} 
     % relative to each respective initial structure.}
     %\label{fig:Int_REST2_Convergence}
 \end{figure}
@@ -912,12 +943,12 @@ The linker was kept in the simulation.
 % \hline
 % & Name & Residue Type/Index & Scenario & Charge & Reference\\
 % \hline
-% \subf{\includegraphics[width=30mm]{figures_SI/RAP_cut.png}}{} & RAP & A38 & All & 0 & available in \cite{mlynsky_extensive_2010} \\
-% \subf{\includegraphics[width=30mm]{figures_SI/RGM_cut.png}}{} & RGM & G8 & Dianionic & -2 & adapted from \cite{mlynsky_extensive_2010} \\
+% \subf{\includegraphics[width=30mm]{figures_SI/RAP_cut.png}}{} & RAP & A38 & All & 0 & available in~\cite{mlynsky_extensive_2010} \\
+% \subf{\includegraphics[width=30mm]{figures_SI/RGM_cut.png}}{} & RGM & G8 & Dianionic & -2 & adapted from~\cite{mlynsky_extensive_2010} \\
 % \subf{\includegraphics[width=30mm]{figures_SI/AD_cut.png}}{} & AD  & A-1 & Dianionic & -2 & / \\
-% \subf{\includegraphics[width=30mm]{figures_SI/RAA_cut.png}}{} & RAA & A-1 & Mono-anionic & -2 & adapted from \cite{kumar_mechanistic_2018} \\
-% \subf{\includegraphics[width=30mm]{figures_SI/GAA_cut.png}}{} & GAA & G+1 & Mono-anionic & 0 & adapted from \cite{kumar_mechanistic_2018} \\
-% \subf{\includegraphics[width=30mm]{figures_SI/GSA_cut.png}}{} & GSA & G+1 & Mono-anionic & 0 & adapted from \cite{kumar_mechanistic_2018} \\
+% \subf{\includegraphics[width=30mm]{figures_SI/RAA_cut.png}}{} & RAA & A-1 & Mono-anionic & -2 & adapted from~\cite{kumar_mechanistic_2018} \\
+% \subf{\includegraphics[width=30mm]{figures_SI/GAA_cut.png}}{} & GAA & G+1 & Mono-anionic & 0 & adapted from~\cite{kumar_mechanistic_2018} \\
+% \subf{\includegraphics[width=30mm]{figures_SI/GSA_cut.png}}{} & GSA & G+1 & Mono-anionic & 0 & adapted from~\cite{kumar_mechanistic_2018} \\
 % \subf{\includegraphics[width=30mm]{figures_SI/RAP_clean.png}}{} & RAC & A-1 & All & -1 & / \\
 
 % \end{tabular}

@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{48}
+\begin{mcitethebibliography}{49}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -356,6 +356,14 @@ Hess,~B.; Bekker,~H.; Berendsen,~H. J.~C.; Fraaije,~J. G. E.~M. {LINCS}: A
 Liu,~P.; Kim,~B.; Friesner,~R.~A.; Berne,~B.~J. Replica exchange with solute
   tempering: A method for sampling biological systems in explicit water.
   \emph{102}, 13749--13754\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bottaro \latin{et~al.}()Bottaro, Di~Palma, and
+  Bussi]{bottaro_role_2014}
+Bottaro,~S.; Di~Palma,~F.; Bussi,~G. The role of nucleobase interactions in
+  {RNA} structure and dynamics. \emph{42}, 13306--13314\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

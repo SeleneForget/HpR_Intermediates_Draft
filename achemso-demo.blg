@@ -10,47 +10,46 @@ Database file #1: acs-achemso-demo.bib
 Database file #2: Thesis_v14_clean.bib
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "wang_replica_2015"
-Warning--I didn't find a database entry for "forget"
 achemso 2025-04-11 v3.13j
-You've used 48 entries,
+You've used 49 entries,
             2538 wiz_defined-function locations,
-            1077 strings with 21462 characters,
-and the built_in function-call counts, 19218 in all, are:
-= -- 1456
-> -- 1383
+            1083 strings with 21729 characters,
+and the built_in function-call counts, 19582 in all, are:
+= -- 1488
+> -- 1401
 < -- 14
-+ -- 522
-- -- 474
-* -- 1933
-:= -- 2686
-add.period$ -- 94
-call.type$ -- 48
++ -- 529
+- -- 480
+* -- 1968
+:= -- 2736
+add.period$ -- 96
+call.type$ -- 49
 change.case$ -- 4
 chr.to.int$ -- 2
-cite$ -- 48
-duplicate$ -- 881
-empty$ -- 1178
-format.name$ -- 532
-if$ -- 3595
+cite$ -- 49
+duplicate$ -- 898
+empty$ -- 1205
+format.name$ -- 539
+if$ -- 3666
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 310
-num.names$ -- 141
-pop$ -- 180
+newline$ -- 316
+num.names$ -- 144
+pop$ -- 184
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 47
+skip$ -- 48
 stack$ -- 0
-substring$ -- 1386
-swap$ -- 1137
-text.length$ -- 94
+substring$ -- 1422
+swap$ -- 1153
+text.length$ -- 96
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 333
+type$ -- 340
 warning$ -- 0
-while$ -- 190
+while$ -- 194
 width$ -- 0
-write$ -- 547
-(There were 3 warnings)
+write$ -- 558
+(There were 2 warnings)
