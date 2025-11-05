@@ -16,6 +16,7 @@
 \usepackage{color}
 \usepackage{xcolor}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% If issues arise when submitting your manuscript, you may want to
 %% un-comment the next line.  This provides information on the
@@ -195,46 +196,45 @@ leading to a monoprotic phosphate intermediate.
 However, this scenario also suffers from its apparent incompatibility with the experimental pH-dependency of the reaction, 
 as argued by Kath-Schorr et al.~\cite{kath-schorr_general_2012}.
 
-All this debate remains unsettled so far because of the inherent self-reactiveness of the HpR. 
-Indeed, because it is self-reactive, the hairpin ribozyme can not be structurally resolved in directly as such.
-Instead, mimics of the HpR in wich the chemical activity is inhibited, etiher by removing the O2' oxygen nuclophilr, by methylating it
-or by replacing other chemical groups with non-reactive ones, are used to study the catalytic site~\cite{rupert_crystal_2001,salter_water_2006}.
-Thus, no one can directly observe the catalytic site in its reactive form.
-With arguments based on crystal structures of \textit{mimics} of the catalytic states,
-and non-discriminative pH profiles, it has been hard to draw definitive conclusions from experiments only.
+The debate remains unresolved because the hairpin ribozyme (HpR) is intrinsically self-reactive 
+and cannot be structurally resolved directly as such.
+Instead, mimics of the HpR in which the chemical activity is inhibited ---either by removing the 2'-oxygen nucleophile, 
+by methylating it, or by replacing other chemical groups with non-reactive ones--- are used to study the catalytic site~\cite{rupert_crystal_2001,salter_water_2006}.
+Consequently, the catalytic site cannot be observed in its native, reactive state.
+With arguments based on crystal structures of mimics of the catalytic states and non-discriminative pH profiles, 
+experiments alone have not yielded a definitive mechanistic conclusion.
 
-In parallel to the experimental efforts, the HpR has been studied using \textit{in silico} tools.
-Complementary to the X-ray crystal studies, molecular dynamics (MD) expands the knowledge gained through structural resolution
-by providing the dynamic behavior of the resolved object. 
-Even better, the challenge of studying self-reactive objects is no longer a problem,
+In parallel with experimental efforts, the HpR has been studied using \textit{in silico} tools.
+Complementary to the X-ray crystal studies, molecular dynamics (MD) 
+expands the knowledge gained through structural resolution by providing the dynamic behavior of the resolved object.
+Even better, the challenge of studying self-reactive objects is no longer a problem, 
 as one can simulate any reactive species without worrying about self-degradation. 
 %Thus, one can have  the dynamic and chemical behavior of the true self-reactive HpR, without any chemical modification.
-Computational studies of the HpR are of two sorts. 
-First, extended simulation of the full HpR with classical force fields~\cite{mlynsky_extensive_2010, mlynsky_reactive_2015,kumar_mechanistic_2018}, 
-which alow for the exploration of the conformational landscape of the HpR\cite{mlynsky_extensive_2010, mlynsky_reactive_2015,kumar_mechanistic_2018}.
-Second, combined quantic and classic mechanics (QM/MM) simulations 
-\cite{mlynsky_comparison_2014, mlynsky_qmmm_2011, nam_electrostatic_2008, nam_electrostatic_2008, kumar_deciphering_2020},
-which investigate the chemical activity of the catalytic site by simulating the chemical steps of the reaction.
-These two investigations means are usually conducted sequentially, 
-as QM/MM simulation require relevant pre-catalytic initial structures 
-which can only be obtained from prior robust classical MD simulations.
+Computational studies of the HpR are of two sorts.
+First, 
+extended classical MD simulations of the full HpR explore its conformational landscape using established force fields~\cite{mlynsky_extensive_2010,mlynsky_reactive_2015,kumar_mechanistic_2018}.
+Second, hybrid quantum–mechanical/molecular-mechanical (QM/MM) simulations probe the catalytic site directly 
+by modeling the chemical reaction steps~\cite{mlynsky_comparison_2014,mlynsky_qmmm_2011,nam_electrostatic_2008,kumar_deciphering_2020}.
+These two investigative approaches are typically conducted sequentially, 
+as QM/MM simulations require relevant pre-catalytic initial structures 
+that can only be obtained from prior robust classical MD simulations.
 
-The classical MD studies are to be classified into two opposing pitches.
-The first base iself on study of the catalytic site 
-which has been explicitly constrained the catalytic site elements to ensure the formation of a specific H-bond 
-network, coherently with the general dianionic scenario: G8:N1···A-1:O2’, A38:N1···G+1:O5’, G8:N2···G+1:Opro-Rp, and A38:N6···G+1:Opro-Rp~\cite{mlynsky_reactive_2015,veenis_investigation_2021}.
-Although a certain stability of this local conformation was evaluated within 500~ns of simulation,
-we proved in our previous work that the stability of this local arrangement, which we labeled L$_\mathrm{1}$, 
+Conclusions brought by the classical MD studies can be classified into two opposing pitches, depending on their prior assumptions.
+The first base itself on study of the catalytic site
+which has been explicitly constrained the catalytic site elements to ensure the formation of a specific H-bond
+network, coherently with the general dianionic scenario: G8:N1···A-1:O2′, A38:N1···G+1:O5′, G8:N2···G+1:O_pro-Rp, and A38:N6···G+1:O_pro-Rp~\cite{mlynsky_reactive_2015,veenis_investigation_2021}.
+Although a certain stability of this local conformation was evaluated within 500 ns of simulation,
+we proved in our previous work that the stability of this local arrangement, which we labeled L$\mathrm{1}$,
 does not hold true over extensive sampling~\cite{forget2024simulation}.
-In fact, we rather found that another local arrangement, 
-L$_\mathrm{2}$, is rather the stable conformation of the hairpin ribozyme in its pre-calaytic state.
+In fact, we rather found that another local arrangement,
+L$\mathrm{2}$, is rather the stable conformation of the hairpin ribozyme in its pre-catalytic state.
 These observations are in line with the second pitch which stipulates that this L$_\mathrm{2}$ arrangement,
-in which G8 is protonated and distinct from O2' and O2' is involved in a H-bond with the non-brdiging pro-Rp oxygen, 
-could be the departure point of the in-line monoanionic scenario. 
-Kumar et al. explored the conformational landscape of the catalytic site ounce the O2' proton has been transfered to Opro-Rp, 
-and showed that the catalytic site followingly arranges itself perfectly for the upcoming addition-elimination steps,
-with the O2'-P-O5' inline attack angle IAA flatter than 140°~\cite{kumar_mechanistic_2018}.
-\selrev{Il manque la référence a d'autres articles ou ces états intermédiaires on été étudiés comme~\cite{}}
+in which G8 is protonated and distinct from O2′ and O2′ is involved in a H-bond with the non-bridging pro-Rp oxygen,
+could be the departure point of the in-line monoanionic scenario.
+Kumar et al. explored the conformational landscape of the catalytic site once the O2′ proton has been transferred to O_pro-Rp,
+and showed that the catalytic site subsequently arranges itself perfectly for the upcoming addition–elimination steps,
+with the O2′–P–O5′ in-line attack angle (IAA) flatter than 140°~\cite{kumar_mechanistic_2018}.
+\selrev{Il manque la référence à d'autres articles où ces états intermédiaires ont été étudiés comme~\cite{}}
 
 % This aimed conformation was guided by chemical intuition on the site itself descriptions 
 % of the catalytic site arrangement have emerged. 
